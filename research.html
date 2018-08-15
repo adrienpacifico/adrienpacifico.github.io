@@ -15,6 +15,27 @@
   </style>
   
 
+
+  <link
+      href="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.css"
+      rel="stylesheet" type="text/css">
+  <link
+      href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.13.0.min.css"
+      rel="stylesheet" type="text/css">
+  <link
+      href="https://cdn.pydata.org/bokeh/release/bokeh-tables-0.13.0.min.css"
+      rel="stylesheet" type="text/css">
+
+  <script src="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.js"></script>
+  <script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.13.0.min.js"></script>
+  <script src="https://cdn.pydata.org/bokeh/release/bokeh-tables-0.13.0.min.js"></script>
+
+
+
+
+
+
+
 <div class="jumbotron text-center" style="margin-bottom:0">
   <h1>Adrien Pacifico</h1>
   <p><b><font style="font-size:30px" color='red'>Warning: Alpha version <br> in construction</font></b></p> 
@@ -44,11 +65,47 @@
 
 
 <div class="jumbotron text-center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WjG2R8S9lGk?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+
+<iframe width="100" height="100" src="https://www.youtube.com/embed/WjG2R8S9lGk?autoplay=1;start=7" 
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
 </iframe>
 </div>
 
 
+<div>
+<iframe  width="1000" height="1000" class="embed-responsive-item" src="./bokeh_graph.html" >
+</iframe>
+</div>
+
+<div>
+  
+</div>
+
+
+<div>
+
+  <script type="text/javascript">
+    (function() {
+  var fn = function() {
+    Bokeh.safely(function() {
+      var docs_json = { DOCUMENT DATA HERE };
+      var render_items = [{
+        "docid":"6833819f-9b5b-4904-821e-3f5eec77de9b",
+        "elementid":"9574d123-9332-4b5f-96cc-6323bef37f40",
+        "modelid":"7b328b27-9b14-4f7b-a5d8-0138bc7b0f59"
+      }];
+
+      Bokeh.embed.embed_items(docs_json, render_items);
+    });
+  };
+  if (document.readyState != "loading") fn();
+  else document.addEventListener("DOMContentLoaded", fn);
+})();
+
+</script>
+</div>
+
+<div class="bk-root" id="9574d123-9332-4b5f-96cc-6323bef37f40"></div>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p>Footer</p>
