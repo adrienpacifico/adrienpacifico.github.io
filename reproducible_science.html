@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
   <style>
   .fakeimg {
       height: 200px;
@@ -15,10 +19,10 @@
   }
   </style>
   
-
+<body>
 <div class="jumbotron text-center" style="margin-bottom:0">
   <h1>Adrien Pacifico</h1>
-<!--   <p><b><font style="font-size:30px" color='red'>Warning: Alpha version <br> in construction</font></b></p>  -->
+  <p><b><font style="font-size:30px" color='red'>Warning: Alpha version <br> in construction</font></b></p> 
   <p>Economics of taxation, Fiscal Microsimulation </p> 
   
 </div>
@@ -47,38 +51,20 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-3">
-      <h2><h3><p><a href="docs/CV_Pacifico.pdf" download>Download my academic CV 
-                <a class="fa fa-download" aria-hidden="true"></a>
-              </a>
-          </p></h3>
-      </h2>
-      <div><img class="img-responsive" src="docs/profile_picture.jpg" alt="Adrien Pacifico" id="image_me"></div>
-      <b>Current positions: </b>
-      <ul compact>
-        <li>PhD Candidate at AMSE.</li>
-        <li>ATER at THEMA (start next September).</li>
-      </ul>
-    </div>
-    <div class="col-sm-8">
-      <h2>About Me:</h2>
-      <h5>Economics:</h5>
-      I'm a public economist and my research has mainly focus on taxation of households. 
-      I've used the microsimulation software OpenFisca to conduct my annalysis. I consider myself as quite literate in the French tax-benefit system, and also in French administrative databases that concerns households. <br>
-      
-      <h5>Python and Data science:</h5>
-      
-      During my PhD I invested heavily in modern data science tools that are becoming new standars in the industry. I conduct all my analysis with Python, and especially the Pandas and the Statsmodels packages. It has allowed me to work efficiently on medium size complex administrative databases (up to 20 Go, with complex data-structure handeling when dealing with different entities such as individuals, households, tax-households, families and so on). 
-
-     
-      
+    <div>
+      <h2>Reproducible Science (in economics)</h2>
+      I'm a public economist and my research focus on taxation of households, inequalities of opportunity, and fertility. <br>
+      I believe that the role of the economist is to provide insightfull analysis helping citizens to make informed public-decision.<br>
+      To do so, i firmly believe that scientific results must be fully reproducible, and that the only way to achieve technical and practical reproducibility is to use free and open-source software (FOSS).
+      To simulate the tax-benefit system I use OpenFisca which is a Python based microsimulation software.
+      I also happen to have invested in technical tools that are quite trendy for Data-science application. 
 
 
 
     </div>
   </div>
 </div>
-
+The role of the economist is to provide insightfull analysis, helping citizens to make informed public-decision.<br>
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p>Mail: 
     <a href="mailto:adrien.pacifico@univ-amu.fr"><span class="far fa-envelope"></span></a>    
@@ -100,7 +86,12 @@
     StackOverflow: <a href="https://stackoverflow.com/users/5304366/adrien-pacifico">
               <span class="fab fa-stack-overflow"</span>
              </a>
-  </p>
   </a>
-</div>
 
+  <div w3-include-html="bokeh_graph.html"></div> 
+  <script>
+includeHTML();
+</script>
+</div>
+</body>
+</html>
