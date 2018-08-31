@@ -96,17 +96,52 @@
               $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$ </p>
 
       <br>
-      <h2>Separation, mariage and civil union, the assessment of cooperation through tax optimization.
+      <h2>A Direct Test of (In)efficiency within Couples:<br> Tax Optimization in French cohabiting couples.
         <a href="#cohabiting"></a>
       </h2>
+      (with O. Bargain, D. Echevin & N. Moreau)
       <div class="embed-responsive embed-responsive-4by3">
       <iframe class="embed-responsive-item"  src="./Notebooks/cohabitants-heatmap.html"></iframe>
       </div>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>
+      <b> The setting: </b>
+      <ul>
+        <li>Cohabitants living in France under the same household constitute two fiscal units. 
+        </li>
+        <li>In the presence of children in the household, they can allocate each child to one of the two tax units.<br>
+        For example for a family of two cohabitants and two children, there exists three allocations: both children on the mother tax return, one child on each cohabitant tax return, and both children on the father tax return.
+        </li>
+        <li>
+        Putting a child on a tax return leads to a tax break that is dependent of the taxpayer income.
+        Depending on the mother and father income, each allocation will lead to a defined income tax liability.
+        </li>
+      </ul>
 
+      The graph above, made to represent a family with two children, provide for each cohabitant income combinaison and each allocation, the associated income tax for the year 2013. The color grading represent the difference between the best and the worst allocation. Allocation A coorespond to all the children put on the father, B the equal split, and C all on the mother.
+      </p>
+      <p>
+      <b> The idea: </b>
+      The assumption usually made over households is that they respect efficiency. Cohabitants with children should thus choose the allocation that minimize their tax liability. The choice of allocation represent  quasi-experimental framework, that allows to do a simple test of efficiency.
+      </p>
+      <p>
+      <b> Results: </b>
+      We use a big administrative dataset which allows us to compute the income tax of each cohabitant. After computing the tax of each allocation an houshold can have, we compare the allocation leading to the smallest tax liability to the chosen one. We show that over 25% of the households do not respect the pareto efficiency by chosing an allocation that is not optimal.</p>
+      <p>
+      We then investigate several avenues to explain why some couples are inneficient.
+
+       <ul> 
+      <p>
+       <li> Inertia: While 20% of the households change their allocation from one year to an other to minimize their tax liability, 80% of the households that should have changed their allocation did not by sticking  to last year allocation. About 8% of the households "learn" the tax scheme by changing their allocation for the optimal one. Pure confusion (or erratic choice) only account for about 2% of the non optimisation behavior  </li>
+      </p>
+
+       <li> <p> Cooperation: Couples to optimize needs to cooperate. They have to share their exact income, compute the income tax of each allocation, then probably bargain for a cash transfers from the cohabitant taking the most children to the one taking the less.</p>
+        <p> We make the assumption that cooperating couples tend to marry or engage in a civil union more, and that non cooperating couples tend to separate. </p>
+        <p> We then test the cooperation assumption by running a multinomial logit regression on the change in the mariatal status over weather or not the allocation chosen is the optimal one. We show that not optimizing with an income loss that are greater than 1% of the household income implies a greater probability to separate, while optimizing increase the probability to get married or to contract a civil union. </p>
+
+       </li>
+       </ul>
+      </p>
+      
 
       <h2>Tax frequency
           <a href="#tax_frequency"></a>
@@ -141,7 +176,7 @@
 
 
 
-<iframe width="0" height="0" src="https://www.youtube.com/embed/WjG2R8S9lGk?autoplay=1;start=3" 
+<iframe width="0" height="0" src="https://www.youtube.com/embed/WjG2R8S9lGk?autoplay=0;start=3" 
 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
 </iframe>
 
@@ -193,11 +228,6 @@ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   
         </a>
 </p>
-</div>
-
-<div>
-<iframe  width="1000" height="1000" class="embed-responsive-item" src="./docs/bokeh_graph.html" >
-</iframe>
 </div>
 
 </body>
