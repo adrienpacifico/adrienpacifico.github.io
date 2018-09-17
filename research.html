@@ -66,7 +66,7 @@
     <div class="row">
       <nav class="col-sm-4" id="myScrollspy">
         <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
-          <h3>Articles: </h3>
+          <h3>Working-papers: </h3>
           <li class="active"><a href="#lowering">The lowering of the family quotient</a></li>
           <li><a href="#cohabitants">Cohabiting couples</a></li>
           <li><a href="#tax_frequency">Tax frequency</a></li>
@@ -79,8 +79,6 @@
         The lowering of the family quotient
         </h2>
 
-
-        <h5>The pitch in one graph: </h5>
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="./docs/bokeh_graph.html" >
           </iframe>
@@ -88,14 +86,135 @@
         </div>
 
 
-        <div><img class="img-responsive" src="./bokeh_graph.html" alt="Adrien Pacifico" id="image_me"></div>
-        "
+
         
         <script src="./bokeh_graph.js" type="text/javascript"></script>
         <div class="bk-root" id="21339a25-362e-4b60-bb33-a2dd1c043c02"></div>
+        <h5>Context: </h5>
+        <ul>
+          <li>The French tax systems works such that the <i>child tax break </i> is increasing with income. 
+          </li>
+          <li>
+            However, the fiscal gain a household can derived from a child is bounded by a ceiling.
+          </li>
+          <li>
+          The ceiling per child has been lowered from 2336€ to 1500€ between 2011 and 2014. That per child ceiling is twice the baseline amount for the third child and over. 
+          </li>
+          <li>
+          Households has been affected in three ways: 
+            <ol>
+              <li>
+                Households for which the fiscal advatage per child was lower than 1500 euros are unafected.
+              </li>
+              <li>
+                Households for which the fiscal advatage per child was between than 1500 euros and 2336 euros face a change in their marginal tax rate.
+              </li>
+              <li>
+                Households for which the fiscal advatage per child was over 2336 euros face a lump sum loss in disposable income of 836€ per child.
+              </li>
+            </ol>
 
-        <p>When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
-                $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$ </p>
+          </li>
+        </ul>
+        <h5>The idea: </h5>
+          <ol>
+          <li>
+            Households below the ceiling are not impacted by the reform, and can be a control group.
+          </li>
+          <li>
+            Households between 2011 and 2014 ceilings will be subject to an <b>income and a substitution effect</b>.
+          </li>
+          <li>
+            Households that are over the ceiling, since they incure a lump sum loss (without any change of their marginal tax rate) are thus subject to a <b>pure income effect</b>.
+          </li>
+        </ol>
+        <h5>Implications: </h5>
+          As the fiscal advantage increases with income, there exists an income threshold at which an household will attain the ceiling. <br>
+          The graph above shows the fiscal tax break due to children for a married couple from one to three children before and after the reform.
+
+
+
+          The following table gives the taxable wage for a given number of children at which ceiling is attained.
+    <h6>
+    <div >
+    <table border="3" class="table table-hover table-sm table-condensed" >
+      <thead>
+        <tr style="text-align: right;" width=30%>
+          <th></th>
+          <th>2011</th>
+          <th>2013</th>
+        </tr>
+        <tr>
+          <th>Children #</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>67776</td>
+          <td>62624</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>79000</td>
+          <td>68028</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>101391</td>
+          <td>79238</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>123866</td>
+          <td>90302</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>145307</td>
+          <td>101424</td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td>159450</td>
+          <td>112324</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </h6>
+
+
+
+        <h5>The method: </h5>
+
+        As emphasized by <a href= "http://piketty.pse.ens.fr/fichiers/public/Piketty1999f.pdf" data-toggle="tooltip" data-placement="right" title="L'immense avantage du mécanisme français du QF,
+unique en son genre parmi les grands pays
+développés, est qu'il permet d'identifier des
+''groupes de contrôle'' relativement fiables, sous la
+forme de groupes de contribuables dont le niveau de
+revenu imposable est exactement le même que ceux
+du ''groupe test'', mais qui ne sont pas,concernés par
+les mêmes variations de taux marginaux
+d'imposition, du fait d'un nombre de parts de QF
+différent de celui du ''groupe test''. ">Picketty(1998)</a>, the family quotient mechanism embodies in itself a <u>triple difference estimator</u>. As the condition to be treated is conditionnal to be on a specific position of the income distribution for a given number of children, we can run a triple difference estimator: 
+
+      <p>$$\begin{align*}
+\Delta y_i &= \beta_0 + \sum_{i=1}^{6} {\beta_i \text{Children}_i} + \sum_{j=1}^{6} {{}_{b}\delta_i \text{Between}_i}  + \sum_{i=1}^{6} {{}_{o}\delta_i \text{Over}_j} \\
+    &+ \sum_{i=1}^6 {{}_{b}\gamma_{i} \text{Children}_i \times \text{Between}_i} \\
+    &+ \sum_{i=1}^6 {{}_{o}\gamma_{i} \text{Children}_i \times \text{Over}_i} \\
+    & + \epsilon_i
+\end{align*}$$ </p>
+
+
+        <p> \(Over_i\) is the dummy indicator  for being over the income threshold where the fiscal advantage is staturating the 2011 ceiling constraint per i children (e.g 6777 euros for 1 child families). \(Over_i\) the one for being between 2011 and 2013 thresholds. \(\text{Children}_i\) the dummy indicator for i number of children. </p>
+
+        <p>Under the classical assumption underlying the classical diff-in-diff literature, \(\beta_0\) captures the general trend in the population, \( \beta_i \) the average difference in trend based on the number of children in the household, \( {}_{b}\delta_i \) and \( {}_{o}\delta_i \) captures the effect of being between or over the tresholds.   </p>
+
+        <p> We find evidence of large income effect on that population. Contrary to cross-sectionnal analysis of elasticities, or to income tax reforms that concerns the top 1\% of the income distribution. It is very likely that these large income effects are due to habits formation, meaning that households do not accept to diministh their standars of living by compensating the income loss associated with the tax reform by working more. Those result are preliminary.</p>
+
 
         <br>
     </div>
@@ -157,7 +276,7 @@
             <a href="#tax_frequency"></a>
         </h2> 
         (with O. Bargain and Alain Trannoy)
-        <h5>Title description, Sep 2, 2017</h5>
+
         <img class="img-responsive" src="docs/tax_frequency_graph.png" alt="graph tax-frequency" id="image_me">
         <p>The question we are asking in this article is:
           <ul compact>
@@ -167,7 +286,7 @@
           <ul compact>
             <li>What would happenend if we put the whole tax-benefit system was working on a monthly basis? </li>
           </ul>   </p>
-        <p>To answer that question we are making the assumption that the yearly utility function is inter-temporally additive monthly function increasing in income \(z\): </p>
+<!--         <p>To answer that question we are making the assumption that the yearly utility function is inter-temporally additive monthly function increasing in income \(z\): </p>
         $$U = \sum_{t=1}^{12} u(z_t).$$
 
 
@@ -175,7 +294,7 @@
 
 
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      est laborum."
+      est laborum." -->
     </div>
       </div>
     </div>
