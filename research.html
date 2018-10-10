@@ -85,7 +85,7 @@
 
         </div>
 
-
+    
 
         
         <script src="./bokeh_graph.js" type="text/javascript"></script>
@@ -95,22 +95,22 @@
           <li>The French tax systems works such that the <i>child tax break </i> is increasing with income. 
           </li>
           <li>
-            However, the fiscal gain a household can derived from a child is bounded by a ceiling.
+            However, the fiscal gain a household can derive from a child is bounded by a ceiling.
           </li>
           <li>
           The ceiling per child has been lowered from 2336€ to 1500€ between 2011 and 2014. That per child ceiling is twice the baseline amount for the third child and over. 
           </li>
           <li>
-          Households has been affected in three ways: 
+          Households have been affected in three ways: 
             <ol>
               <li>
-                Households for which the fiscal advatage per child was lower than 1500 euros are unafected.
+                Households for which the fiscal advantage per child was lower than 1500 euros are unaffected.
               </li>
               <li>
-                Households for which the fiscal advatage per child was between than 1500 euros and 2336 euros face a change in their marginal tax rate.
+                Households for which the fiscal advantage per child was between 1500 euros and 2336 euros face a change in their marginal tax rate.
               </li>
               <li>
-                Households for which the fiscal advatage per child was over 2336 euros face a lump sum loss in disposable income of 836€ per child.
+                Households for which the fiscal advantage per child was over 2336 euros face a lump sum loss in disposable income of 836€ per child.
               </li>
             </ol>
 
@@ -119,7 +119,7 @@
         <h5>The idea: </h5>
           <ol>
           <li>
-            Households below the ceiling are not impacted by the reform, and can be a control group.
+            Households below the ceiling are not impacted by the reform and can be a control group.
           </li>
           <li>
             Households between 2011 and 2014 ceilings will be subject to an <b>income and a substitution effect</b>.
@@ -129,7 +129,7 @@
           </li>
         </ol>
         <h5>Implications: </h5>
-          As the fiscal advantage increases with income, there exists an income threshold at which an household will attain the ceiling. <br>
+          As the fiscal advantage increases with income, there exists an income threshold at which a household will attain the ceiling. <br>
           The graph above shows the fiscal tax break due to children for a married couple from one to three children before and after the reform.
 
 
@@ -187,7 +187,8 @@
   </h6>
 
 
-
+        <h5>Data: </h5>
+         I use the Échantillon Démographique Permanent (EDP). The EDP allows to follow a pannel of 2 millions households over 5 years with their tax returns. It also contains a rich set of other variables such as diplomas, housing characteristics, that allows to include a rich set of controls to the annalysis.
         <h5>The method: </h5>
 
         As emphasized by <a href= "http://piketty.pse.ens.fr/fichiers/public/Piketty1999f.pdf" data-toggle="tooltip" data-placement="right" title="L'immense avantage du mécanisme français du QF,
@@ -209,11 +210,12 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
 \end{align*}$$ </p>
 
 
-        <p> \(Over_i\) is the dummy indicator  for being over the income threshold where the fiscal advantage is staturating the 2011 ceiling constraint per i children (e.g 6777 euros for 1 child families). \(Over_i\) the one for being between 2011 and 2013 thresholds. \(\text{Children}_i\) the dummy indicator for i number of children. </p>
+        <p> \(Over_i\) is the dummy indicator for being over the income threshold where the fiscal advantage is staturating the 2011 ceiling constraint per i children (e.g 6777 euros for 1 child families). \(Between_i\) the one for being between 2011 and 2013 thresholds. \(\text{Children}_i\) the dummy indicator for i number of children. </p>
 
         <p>Under the classical assumption underlying the classical diff-in-diff literature, \(\beta_0\) captures the general trend in the population, \( \beta_i \) the average difference in trend based on the number of children in the household, \( {}_{b}\delta_i \) and \( {}_{o}\delta_i \) captures the effect of being between or over the tresholds.   </p>
 
-        <p> We find evidence of large income effect on that population. Contrary to cross-sectionnal analysis of elasticities, or to income tax reforms that concerns the top 1\% of the income distribution. It is very likely that these large income effects are due to habits formation, meaning that households do not accept to diministh their standars of living by compensating the income loss associated with the tax reform by working more. Those results are preliminary.</p>
+        <h5>Results: </h5>
+        <p> We find evidence of large income effect on that population. Contrary to cross-sectional analysis of elasticities, or to income tax reforms that concern the top 1% of the income distribution. It is very likely that these large income effects are due to habits formation, meaning that households do not accept to diminish their standards of living by compensating the income loss associated with the tax reform by working more. Those results are preliminary.</p>
 
 
         <br>
@@ -240,17 +242,17 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
           </li>
         </ul>
 
-        The graph above, made to represent a family with two children, provide for each cohabitant income combinaison and each allocation, the associated income tax for the year 2013. The color grading represent the difference between the best and the worst allocation. Allocation A coorespond to all the children put on the father, B the equal split, and C all on the mother.
+        The graph above made to represent a family with two children, provide for each cohabitant income combination and each allocation, the associated income tax for the year 2013. The color grading represents the difference between the best and the worst allocation. Allocation A corresponds to all the children put on the father, B the equal split, and C all on the mother.
         </p>
         <p>
         <b> The idea: </b>
-        The assumption usually made over households is that they respect efficiency. Cohabitants with children should thus choose the allocation that minimize their tax liability. The choice of allocation represent  quasi-experimental framework, that allows to do a simple test of efficiency within the household.
+        The assumption usually made over households is that they respect efficiency. Cohabitants with children should thus choose the allocation that minimizes their tax liability. The choice of allocation represents quasi-experimental framework, that allows to do a simple test of efficiency within the household.
         </p>
         <p>
         <b> Results: </b>
-        We use a big administrative dataset which allows us to compute the income tax of each cohabitant. After computing the tax of each allocation an houshold can have, we compare the allocation leading to the smallest tax liability to the chosen one. We show that over 25% of the households do not respect the pareto efficiency by chosing an allocation that is not optimal.</p>
+        We use a big administrative dataset which allows us to compute the income tax of each cohabitant. After computing the tax of each allocation an household can have, we compare the allocation leading to the smallest tax liability to the chosen one. We show that over 25% of the households do not respect the Pareto efficiency by choosing an allocation that is not optimal.</p>
         <p>
-        We then investigate several avenues to explain why some couples are inneficient.
+        We then investigate several avenues to explain why some couples are inefficient.
 
          <ul> 
 
@@ -262,9 +264,9 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
          <li> <b>Inertia</b>: While 20% of the households change their allocation from one year to an other to minimize their tax liability, 80% of the households that should have changed their allocation did not by sticking  to last year allocation. About 8% of the households "learn" the tax scheme by changing their allocation for the optimal one. Pure confusion (or erratic choice) only account for about 2% of the non optimisation behavior  </li>
         </p>
 
-         <li> <p> <b>Cooperation</b>: Couples to optimize need to cooperate. They have to share their exact income, compute the income tax of each allocation, then probably bargain for a cash transfers from the cohabitant taking the most children to the one taking the less.</p>
-          <p> We make the assumption that cooperating couples tend to marry or engage in a civil union more, and that non cooperating couples tend to separate. </p>
-          <p> We then test the cooperation assumption by running a multinomial logit regression on the change in the mariatal status over weather or not the allocation chosen is the optimal one. We show that not optimizing with an income loss that are greater than 1% of the household income implies a greater probability to separate, while optimizing increase the probability to get married or to contract a civil union. </p>
+         <li> <p> <b>Cooperation</b>: Couples to optimize need to cooperate. They have to share their exact income, compute the income tax of each allocation, then probably bargain for a cash transfer from the cohabitant taking the most children to the one taking the less.</p>
+          <p> We make the assumption that cooperating couples tend to marry or engage in a civil union more, and that non-cooperating couples tend to separate. </p>
+          <p> We then test the cooperation assumption by running a multinomial logit regression on the change in the marital status over whether or not the allocation chosen is the optimal one. We show that not optimizing with an income loss that is greater than 1% of the household income implies a greater probability to separate while optimizing increase the probability to get married or to contract a civil union (PACS). </p>
 
          </li>
          </ul>
@@ -296,6 +298,110 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       est laborum." -->
     </div>
+    <div id=fututre_research>
+        <h2>Future Research/Research Projects
+            <a href="#Future_research"></a>
+        </h2> 
+        <h4>Is France a land of opportunity? The Geography of Intergenerational Mobility in the France.
+        </h4>
+          <ul compact>
+            <li>
+              <p>
+              <a href="https://academic.oup.com/qje/article/129/4/1553/1853754">Chetty & al(2014)</a> shows that intergenerational income mobility is quite small in the US, moreover it shows that intergenerational mobility varies substantially across areas within the United States.
+              <p>
+              France intergenerational mobility has not been subject to many studies (Trannoy et al, Dherbécourt).  
+              </p>
+
+              <p>
+              The government would face a classical equity/efficiency tradeoff: by giving to rich households, the government entails the equity principle by giving more to those that are not in needs. But by doing that it may endogenously increase future growth through better human capital. However, that debate is of interest at the condition that Rich Households reacts on the fertility margin.
+              </p>
+              <p>
+              Building on three French tax reforms that happened between 2012 and 2015 that reduced widely the tax exemption per dependent children (up to 6% of disposable income for a 3 children family) only for the last decile of the income distribution, it is possible to evaluate the fertility impact of the reform. 
+
+              The method could rely either on a triple-difference estimator. The Échantillon Démographique Permanent allows to run such an analysis in panel over a very large population (over 50 000 households).
+               </p>
+               </li>
+          </ul> 
+
+
+
+
+
+
+        <h4>Taxe Incentives and Fertility of Rich French Households:
+        </h4>
+          <ul compact>
+            <li>
+              <p>
+              Many studies has found a positive link between tax exemption per dependent children and fertility (Whittington & al (1990), Gauthier & al(1997), Cohen & al (2013), Laroque Salanie (2008), Bastian(2017)) suggesting that children are normal goods. However these studies usually focus on are made on the whole population or focus on the bottom of the distribution.
+<!-- https://sites.uclouvain.be/econ/DP/IRES/2016010.pdf -->
+              <a href= "http://budgetmodel.wharton.upenn.edu/issues/2016/1/7/the-economic-determinants-of-fertility-choices">click</a>
+              <p>
+              Top of the income distribution parents make their children inehrit of their good social intelectual and genetic capital (Trzaskowski & al (2014)).
+              <!-- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3907681/ -->
+              They also invest more in their education. This would generally leads to more productive children.
+              By subsidising rich households fertility government may create future economic growth when their high skilled children will enter the labor market. 
+              </p>
+
+              <p>
+              The government would face a classical equity/efficiency tradeoff: by giving to rich households, the government entails the equity principle by giving more to those that are not in needs. But by doing that it may endogenously increase future growth through better human capital. However, that debate is of interest at the condition that Rich Households reacts on the fertility margin.
+              </p>
+
+              <p>
+                
+              </p>
+              <p>
+              Building on three French tax reforms that happened between 2012 and 2015 that reduced widely the tax exemption per dependent children (up to 6% of disposable income for a 3 children family) only for the last decile of the income distribution, it is possible to evaluate the fertility impact of the reform. 
+
+              The method could rely either on a triple-difference estimator. The Échantillon Démographique Permanent allows to run such an analysis in panel over a very large population (over 50 000 households).
+               </p>
+               </li>
+          </ul> 
+
+        <h4>Temporality of the tax-benefit system, behavioral and normative implications:
+        </h4>
+          <ul compact>
+            <li>
+              <p>Based on the stream of income an individus has, she can, for the same amount of labor income, have different disposable income due to temporal consideration of the tax-benefit system. </p>
+              <p>  As an exemple French income benefit (RSA) is based on the last three month preceeding the claim for the benefit, that is paid for three month after the claim. A direct consequence is that an individual that work every second month will have a lower disposable income than on that works every second quarter.</p>
+
+              <p> The French tax-benefit system has may complexities that leads to complex disencentives to work especially at the bottom of the distribution with respect to labor income, temporality and disposable income. A precise simulation of the tax-benefits (ARE, RSA, PPA, but also in kind local benefits) would allow to simulate agents incentives to work. The use of administrative databases (CNAF data, FH-DADS) would allow to see how those disencentives generated by the temporality of the tax-benefit system impact agents behavior. If they do, it would be possible to compute the implied dead weight loss.</p>
+              <p> Why is it important?:<br>
+                Technological advances make unqualified work less important in firms production function. Labour laws may rise the gross minimum wage above the marginal productivity of the lower skilled workers, as a consequence
+                unemployment is important in many developed countries.
+                <br>
+                A direct consequence of unemployment is that low skilled workers usually have temporary contracts, that leads to highly volatile labor income (CITE). 
+                </p>
+
+                <p>The way we deseign taxes w.r.t tax temporality would impact thogoughly individuals at the lower end of the income distribution since their income varies a lot.</p>
+
+                <p>In the first chapter of my thesis, we determines two opposite normative views when deseigning taxes w.r.t temporality. 
+
+                The liberal one that has been defended by Vickrey: It states that individual should be free to allocate their time and leisure as they would like. Simply said </p>
+
+               </li>
+          </ul> 
+        <p>Equality of Opportunity:
+          <ul compact>
+            <li>"What is the impact of the frequency of the tax on household welfare"? </li>
+          </ul> 
+        Or reframed in a more concreate way, 
+          <ul compact>
+            <li>What would happenend if we put the whole tax-benefit system was working on a monthly basis? </li>
+          </ul>   </p>
+<!--         <p>To answer that question we are making the assumption that the yearly utility function is inter-temporally additive monthly function increasing in income \(z\): </p>
+        $$U = \sum_{t=1}^{12} u(z_t).$$
+
+
+        We then assume that there exist a tax \(G\), which leads to \(U = \sum_{t=1}^{12} u(z_t - G_t)\).
+
+
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      est laborum." -->
+    </div>
+
+
+
       </div>
     </div>
   </div>
