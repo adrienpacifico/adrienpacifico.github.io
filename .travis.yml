@@ -1,0 +1,11 @@
+language: python
+python: 3.6
+install:
+  - pip install -r requirements.txt
+# command to run tests
+script:
+  - jupyter nbconvert --log-level=10 --ExecutePreprocessor.timeout=-1 --to notebook --execute Notebooks/bokeh_graph_for_website_qf_lowering.ipynb
+notifications:
+ email:
+   on_success: change
+   on_failure: always
