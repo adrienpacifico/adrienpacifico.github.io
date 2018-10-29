@@ -42,7 +42,7 @@
   <div class="jumbotron text-center" style="margin-bottom:0">
     <h1>Adrien Pacifico</h1>
     <p><b><font style="font-size:30px" color='red'>Warning: Alpha version <br> in construction</font></b></p> 
-    <p>Economics of taxation, Fiscal Microsimulation </p> 
+    <p>Economics of Taxation, Fiscal Microsimulation, Data Science </p> 
     
   </div>
 
@@ -239,7 +239,7 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
         (with O. Bargain, D. Echevin & N. Moreau)<br>
 
         <a href="./Notebooks/cohabitants-heatmap.html">Graph Full Screen</a>, 
-        <a href="./docs/bokeh_graph.html">Generate Graphs for other family compositions.</a>
+        <a href="https://mybinder.org/v2/gh/adrienpacifico/adrienpacifico.github.io/master?filepath=Notebooks%2Fplotly_openfisca_cohabitants.ipynb">Generate Graphs for other family compositions.</a>
         <div class="embed-responsive embed-responsive-4by3">
         <iframe class="embed-responsive-item"  src="./Notebooks/cohabitants-heatmap.html"></iframe>
         </div>
@@ -249,7 +249,7 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
           <li>Cohabitants living in France under the same household constitute two fiscal units. 
           </li>
           <li>In the presence of children in the household, they can allocate each child to one of the two tax units.<br>
-          For example for a family of two cohabitants and two children, there exists three allocations: both children on the mother tax return, one child on each cohabitant tax return, and both children on the father tax return.
+          For example, a family of two cohabitants and two children, there exists three allocations: both children on the mother tax return, one child on each cohabitant tax return, and both children on the father tax return.
           </li>
           <li>
           Putting a child on a tax return leads to a tax break that is dependent of the taxpayer income.
@@ -295,20 +295,81 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
         (with O. Bargain and Alain Trannoy)
 
         <img class="img-responsive" src="docs/tax_frequency_graph.png" alt="graph tax-frequency" id="image_me">
-        <p>The question we are asking in this article is:
+
+
+        <p>
+          In this article we explore the temporality of the tax by comparing a tax system with an income tax computed on an annual basis but paid monthly (one twelth each month), to a tax computed on a monthly basis and paid monthly.
+        </p>
+        <p>Formally we compare:
+
           <ul compact>
-            <li>"What is the impact of the frequency of the tax on household welfare"? </li>
+            <li>the first system where the tax paid at a given month \(t \) is \(\frac{G(\sum_{1}^{12}y_{t})}{12}\),
+             </li>
+            <li>to one where the tax paid at a given month \(t \) is \( \frac{G(12 y_{t})}{12} \).
+             </li>
           </ul> 
-        Or reframed in a more concreate way, 
+          With \(G()\) a general tax function, an \(y_t\) the tax-unit income for a given month \(t\).
+
+         
+
+        </p>
+
+
+
+
+        <p>The question of the frequency of the tax is of little interest if streams of income are steady. The monthly tax streams would be the same between the two tax systems. <br>
+
+
+        However, if they vary, in the presence of a convex tax two opposite force will be at stake:
           <ul compact>
-            <li>What would happenend if the whole tax-benefit system was working on a monthly basis instead of an annual one? </li>
-          </ul>   
+            <li><b>An income smoothing effect:</b> <br>
+              A concave utility implies that agents want to smooth their consumption between periods. If a tax in monotonously increasing, a monthly tax will have inssurential/income smoothing property that will make agents better off. In other words people prefers to pay a higher tax when they earn more, and a lower tax when they earn less than to pay always the same tax whatever their income. The "more convex" the tax function is, the higher the income smoothing effect is.
+             </li>
+            <li><b>An higher tax effect:</b> <br>
+              If a tax is convex, due to Jensen's inequality, agents with varying income will have a higher tax liability with an annual scheme than with a monthly scheme.
+             </li>
+          </ul> 
+          <p>
+          We then run a simulation over the French income tax with monthly data (French Labor Survey) to see which effect dominates. To do so we take an HP Young equal sacrifice utility function derived from the income tax scheme with an inter-temporally separable utility function. 
+          We find that the monthly scheme is in aggregate better than the annual scheme with an aggregate money metric gain of 2 billions euros.<br>
+          The effect is mainly driven by the bottom of the income distribution for three reasons:<br>
+          1) Households at the bottom of the income distribution are the ones that face the most yearly variations in income. 2) These households with lowest income are the ones that are on the steepest part of the utility function, and thus weight more in the utilitarian appraisal of the monthly scheme. 3) Income tax brackets are very large and not numerous, thus most households that have small variations of income will face a linear tax scheme, and thus only the income smoothing effect will apply.
+        </p>
 
+        <p>
+          We then test two other temporal tax system:
 
+        <ul compact>
+            <li><b> An equivalized tax scheme</b> that is a monthly tax scheme for which the tax liability is the same than with the annual tax scheme.
 
+              $$\sum_{1}^{T}\frac{1}{T+\lambda}G(Ty_{t})$$
+              
+             </li>
+            <li><b>And a income averaging tax system</b> that follows the tax system embodied by Vickrey (19xx)  which aims that for (TODO: describe) .<br>
+                $$ {g_{t}^{V}}= \frac{t}{T} G\left(T\frac{\sum_{p=0}^{t}y_{p}}{t}\right) -\sum_{p=0}^{t-1}g_{p}^{V}$$
+             </li>
+          </ul>
+
+        We show theoretically that both of these tax systems are Pareto improving with respect to the annual and monthly tax system. For increasing income streams the equivalized tax scheme dominates the income averaging scheme, and for decreasing income the income averaging scheme dominates the equivalized scheme.            
+        </p>
+        <p>
+          With our previous simulations assumptions we run simulations over these two new income tax scheme. The compensated scheme implies a gain of 500 millions euros over the monthly scheme, while the avaragin scheme implies a gain of 3 billions euros over the compensated scheme.
 
 
         </p>
+
+        <p>
+          Policy implication:
+          Vickrey larger demogrant --> smaller gains.
+          Equivalized, not implementable.
+          Parfit vs. Vickrey
+
+        </p>
+
+
+
+
+    </p>
 <!--         <p>To answer that question we are making the assumption that the yearly utility function is inter-temporally additive monthly function increasing in income \(z\): </p>
         $$U = \sum_{t=1}^{12} u(z_t).$$
 
@@ -387,7 +448,7 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
               <p>
               Building on three French tax reforms that happened between 2012 and 2015 that reduced widely the tax exemption per dependent children (up to 6% of disposable income for a 3 children family) only for the last decile of the income distribution, it is possible to evaluate the fertility impact of the reform. 
 
-              The method could rely either on a triple-difference estimator. The Échantillon Démographique Permanent allows to run such an analysis in panel over a very large population (over 50 000 households).
+              The method could rely either on a triple-difference estimator. The Échantillon Démographique Permanent allows to run such an analysis in panel over a large population (over 50 000 households).
                </p>
                </li>
           </ul> 
@@ -397,7 +458,7 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
           <ul compact>
             <li>
               <p>Based on the stream of income an individual has, she can, for the same amount of labor income, have different disposable income due to temporal consideration of the tax-benefit system. </p>
-              <p>  As an example French income benefit (RSA) is based on the last three month preceding the claim for the benefit, that is paid for three months after the claim. A direct consequence is that an individual that works every second month will have a lower disposable income than on that works every second quarter.</p>
+              <p>  As an example French income benefit (RSA) is based on the last three month preceding the claim for the benefit, that is paid for three months after the claim. A direct consequence is that an individual that works every second month will have a lower disposable income than one that works every second quarter.</p>
 
               <p> The French tax-benefit system has many complexities that lead to complex disincentives to work especially at the bottom of the distribution with respect to labor income, temporality, and disposable income. A precise simulation of the tax-benefits (ARE, RSA, PPA, but also in kind local benefits) would allow to simulate agents incentives to work. The use of administrative databases (CNAF data, FH-DADS) would allow to see how those disincentives generated by the temporality of the tax-benefit system impact agents behavior. If they do, it would be possible to compute the implied deadweight loss.</p>
               <p> Why is it important?:<br>
@@ -410,7 +471,7 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
 
                 <p>In the first chapter of my thesis, we determine two opposite normative views when designing taxes w.r.t temporality. 
 
-                The liberal one that has been defended by Vickrey: It states that individual should be free to allocate their time and leisure as they would like. Simply said </p>
+                The goal of this project is to extend the analysis made in the first chapter of my thesis to assess behavioral reactions due to income variability within the year. </p>
                </li>
           </ul> 
 
