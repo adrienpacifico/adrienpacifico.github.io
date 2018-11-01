@@ -88,7 +88,7 @@
         </h2>
         (Job Market Paper)<br>
         <a href="./docs/bokeh_graph.html">Graph Full Screen</a>, 
-        <a href="https://mybinder.org/v2/gh/adrienpacifico/adrienpacifico.github.io/master?filepath=Notebooks%2Fbokeh_graph_for_website_qf_lowering.ipynb">Generate Graphs and Thresholds.</a>
+        <a href="https://mybinder.org/v2/gh/adrienpacifico/adrienpacifico.github.io/master?filepath=Notebooks%2Fbokeh_graph_for_website_qf_lowering.ipynb">Generate Graphs and Thresholds,</a><a href="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Seminaire_docto_09_2018/index.html"> Slides.</a>
         
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="./docs/bokeh_graph.html" >
@@ -322,12 +322,13 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
 
         However, if they vary, in the presence of a convex tax two opposite force will be at stake:
           <ul compact>
+            <li><b>An higher tax effect:</b> <br>
+              If a tax is convex, due to Jensen's inequality, agents with varying income will have a higher tax liability with an annual scheme than with a monthly scheme.
+            </li>
             <li><b>An income smoothing effect:</b> <br>
               A concave utility implies that agents want to smooth their consumption between periods. If a tax in monotonously increasing, a monthly tax will have inssurential/income smoothing property that will make agents better off. In other words people prefers to pay a higher tax when they earn more, and a lower tax when they earn less than to pay always the same tax whatever their income. The "more convex" the tax function is, the higher the income smoothing effect is.
              </li>
-            <li><b>An higher tax effect:</b> <br>
-              If a tax is convex, due to Jensen's inequality, agents with varying income will have a higher tax liability with an annual scheme than with a monthly scheme.
-             </li>
+
           </ul> 
           <p>
           We then run a simulation over the French income tax with monthly data (French Labor Survey) to see which effect dominates. To do so we take an HP Young equal sacrifice utility function derived from the income tax scheme with an inter-temporally separable utility function. 
@@ -345,7 +346,7 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
               $$\sum_{1}^{T}\frac{1}{T+\lambda}G(Ty_{t})$$
               
              </li>
-            <li><b>And a income averaging tax system</b> that follows the tax system embodied by Vickrey (19xx)  which aims that for (TODO: describe) .<br>
+            <li><b>And a income averaging tax system</b> that follows the tax system proposed by Vickrey (19xx)  which aims at the tax to be completly neutral (in money) with respect to the time at which an income is realized.<br>
                 $$ {g_{t}^{V}}= \frac{t}{T} G\left(T\frac{\sum_{p=0}^{t}y_{p}}{t}\right) -\sum_{p=0}^{t-1}g_{p}^{V}$$
              </li>
           </ul>
@@ -353,23 +354,34 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
         We show theoretically that both of these tax systems are Pareto improving with respect to the annual and monthly tax system. For increasing income streams the equivalized tax scheme dominates the income averaging scheme, and for decreasing income the income averaging scheme dominates the equivalized scheme.            
         </p>
         <p>
-          With our previous simulations assumptions we run simulations over these two new income tax scheme. The compensated scheme implies a gain of 500 millions euros over the monthly scheme, while the avaragin scheme implies a gain of 3 billions euros over the compensated scheme.
+          With our previous simulations assumptions we run simulations over these two new income tax scheme. The compensated scheme implies a gain of 500 millions euros over the monthly scheme, while the averaging scheme implies a gain of 3 billions euros over the compensated scheme.
+
+
+        <!-- </p>
+        <b>Conclusion:</b> 
+          In this article we give indsights on the temporality of the tax which has been relatively unexeplored since Vickrey. <br>
+          It sheds light 
+          We have theretically, given a static tax scheme, compared several temporal implementations of that scheme. We then have ran simulations on the French tax system wich exhibit that substential welfare gains can be obtained compared to the actual tax scheme. Over those tested solutions results favors the proposition that Vickrey made in 19xx. <br>
+          We also show that the subject is mainly at stake for the botom of the distribution. Indeed    <br>
+          Our research is also quite
 
 
         </p>
 
         <p>
-          Policy implication:
-          Vickrey larger demogrant --> smaller gains.
+          <b>Interpretation and Policy Implications:</b> 
+          Vickrey larger demogrant smaller gains.
           Equivalized, not implementable.
           Parfit vs. Vickrey
 
+          The domination of the Vickrey scheme (that implies negative income tax if present income is small enough compare to previous periods average income) is partly due to the chosen utility function: H.P Young utility functions assimptotically tend towards \(-\infty\) for a null income. A consequence is that a  demogrant would reduce the money metric gains between the compensated and the averaging scheme. <br>
+          However, the compensated scheme lack of a implementation problem: it implies to know future realized income before applying the tax scheme to a specific tax unit.  
+
         </p>
+ -->
 
 
 
-
-    </p>
 <!--         <p>To answer that question we are making the assumption that the yearly utility function is inter-temporally additive monthly function increasing in income \(z\): </p>
         $$U = \sum_{t=1}^{12} u(z_t).$$
 
@@ -458,9 +470,16 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
           <ul compact>
             <li>
               <p>Based on the stream of income an individual has, she can, for the same amount of labor income, have different disposable income due to temporal consideration of the tax-benefit system. </p>
-              <p>  As an example French income benefit (RSA) is based on the last three month preceding the claim for the benefit, that is paid for three months after the claim. A direct consequence is that an individual that works every second month will have a lower disposable income than one that works every second quarter.</p>
+              <p> First example French income benefit (RSA) is based on the last three month preceding the claim for the benefit, that is paid for three months after the claim. A direct consequence is that an individual that works every second month will have a lower disposable income than one that works every second quarter.</p>
 
-              <p> The French tax-benefit system has many complexities that lead to complex disincentives to work especially at the bottom of the distribution with respect to labor income, temporality, and disposable income. A precise simulation of the tax-benefits (ARE, RSA, PPA, but also in kind local benefits) would allow to simulate agents incentives to work. The use of administrative databases (CNAF data, FH-DADS) would allow to see how those disincentives generated by the temporality of the tax-benefit system impact agents behavior. If they do, it would be possible to compute the implied deadweight loss.</p>
+              <p> Second example, a woman that give birth directly after graduating will have no income compensation for potential loss in labor income, while a women that has is employed will benefit from pre-maternal and maternal leaves.
+              </p> 
+
+              <P>In all these exemples, the labor income earned could be the same over a given period (e.g. life cycle), but can lead to substantive difference in disposable income. This rise the question of weather or not it is desirable.<br>
+              Vickrey has chosen to defend the point of view that it is not by stating that the same income over the life-cycle should lead to the same disposable income.  </P>
+
+              <p> The French tax-benefit system has many complexities that lead to complex disincentives and incentives to work with respect to timing of labor income interacting with the temporality rulte of the tax-benefit system.
+              A precise simulation of the tax-benefits (ARE, RSA, PPA, but also in kind local benefits) would allow to simulate agents incentives to work. The use of administrative databases (CNAF data, FH-DADS) would allow to see how those disincentives generated by the temporality of the tax-benefit system impact agents behavior. If they do, it would be possible to compute the implied deadweight loss.</p>
               <p> Why is it important?:<br>
                 Technological advances make unqualified work less important in firms production function. Labour laws may raise the gross minimum wage above the marginal productivity of the lower-skilled workers, as a consequence unemployment is important in many developed countries.
                 <br>
@@ -473,7 +492,11 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
 
                 The goal of this project is to extend the analysis made in the first chapter of my thesis to assess behavioral reactions due to income variability within the year. </p>
                </li>
-          </ul> 
+          </ul>
+
+        <h4>Other: 
+        </h4>
+        In addition to those three projects, I also have a vivid interest for other research questions. I am very interested in gender inequalities. I am closely following the litterature on discrimination (either gender discrimination, race discrimination or social discrimination). I would also like to study couple formation and dissolution. I observed that the discontinuty at 50% observed in as Bertran et al is as important in the US as in  France. I also saw on the cohabitants project that the fiscal gain to marriage are an important. I think that there is a room to study the interaction between gender norms,  
 
 <!--         <p>To answer that question we are making the assumption that the yearly utility function is inter-temporally additive monthly function increasing in income \(z\): </p>
         $$U = \sum_{t=1}^{12} u(z_t).$$
