@@ -48,9 +48,8 @@
         <ul class="nav navbar-nav">
           <li><a href="index.html">About Me</a></li>
           <li><a href="./research.html">Research</a></li>
-          <li class="active"><a href="./other.html">Pet projects</a></li>
           <li><a href="./policy_briefs.html">Policy Briefs</a></li>
-          <li><a href="./reproducible_science.html">Reproducible science</a></li>
+          <li class="active"><a href="./other.html">Other</a></li>
         </ul>
       </div>
     </div>
@@ -58,59 +57,138 @@
 
 
 
+<div class="col-sm-3">
+</div>  
+  <div class="col-sm-8">
+      <h2>How does the French income tax work:<br> </h2>
+      <h3>An Openfisca Notebook Story (in French). </h3>
+      
+      <div><img class="img-responsive" src="docs/OpenFisca_graph.png" alt="Adrien Pacifico" id="image_me"></div>
+      <p>OpenFisca is an OpenSource microsimulation software that can be used to explore the French tax-benefit system. In this notebook, I try to explain how does the French income tax works in some of its dimensions. Simply click on the "launch binder" icon to start to explore the French income tax! </p>
 
-
-    <div class="container">
-      <h2>Openfisca-notebook-story</h2>
       Execute binder: 
       <a     href="https://mybinder.org/v2/gh/adrienpacifico/openfisca-france-notebook-story/master?filepath=notebooks%2Fcomment_fonctionne_l_Impot_sur_le_revenu_francais.ipynb"><img src="https://camo.githubusercontent.com/24c94be25a8a8b5703a34466825bbfdd6147d9d0/68747470733a2f2f6d7962696e6465722e6f72672f62616467652e737667" alt="Binder" data-canonical-src="https://mybinder.org/badge.svg" style="max-width:100%;"
       data-toggle="tooltip" data-placement="right" title="Click to launch binder!">
       </a>
       Travis build: <img src="https://travis-ci.org/adrienpacifico/openfisca-france-notebook-story.svg?branch=master" alt="Build Status" data-canonical-src="https://travis-ci.com/adrienpacifico/openfisca-france-notebook-story.svg?branch=master" style="max-width:100%;">
 
+ 
+
+    <h2>Reproducible Science (in economics)</h2>
+    <p>
+      When data are accessible, less than 2/3 of the economics article are reproducible (<a href="https://www.federalreserve.gov/econresdata/feds/2015/files/2015083pap.pdf">Chang & Li, 2015)</a>. This could be due to many reasons, where the most critical are the unavailability of the code used to produce the study, and errors in the code made by the authors (e.g <a href="https://www.nytimes.com/2013/04/19/opinion/krugman-the-excel-depression.html">the Reinhart & Rogoff case</a>).
+      </p>
+      <p>
+        The use of administrative data is more and more frequent in the economic literature. It often contains sensitive information that researcher access through confidentiality agreements. Researchers are thus unable to give access to the data they used to the general public.
+      </p>
+
+      <p>
+      I plan write about Jupyter Notebooks as a good solution to allow other researchers to investigate how exactly results have been produced (without the possibility of alteration), without entailing anonymity of the sampled observation.
+      </p>
 
 
 
-      <h5>Explore the French Income Tax with OpenFisca.</h5>
-      <div><img class="img-responsive" src="docs/OpenFisca_graph.png" alt="Adrien Pacifico" id="image_me"></div>
-      <p>OpenFisca is an OpenSource microsimulation software that can be used to explore the French tax-benefit system. I try to explain how does the French income tax works in some of its dimensions. Simply click on the "launch binder" icon to start to explore the French income tax! </p>
+      <br>
+    <!-- I plan to write a blog post concerning reproducibility in economics, in particular for articles that are based on administrative databases with restricted access.  -->
+       For the time being, here is some links that nourrish my reflexions on the subject. 
 
-      <!-- <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <details>
+  <summary>Display links</summary>
+  <p>
+  
 
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      <ul compact>
+          <li>
+            Economics research is not replicable 2/3 of the time:
+            <a href="https://www.federalreserve.gov/econresdata/feds/2015/files/2015083pap.pdf"> Chang & Li, 2015
+            </a>
+          </li>
+          <li>
+            A great book on how to do reproducible research with exemples: 
+            <a href="https://www.practicereproducibleresearch.org/"> 
+              The Practice of Reproducible Research
+            </a>
+          </li>
+          <li>
+            The usage of Binder to communicate code and make easily reproducible examples: 
+            <a href="https://conference.scipy.org/proceedings/scipy2018/project_jupyter.html"> 
+              Binder 2.0 - Reproducible, interactive, sharable environments for science at scale (2018)
+            </a>
+          </li>
+
+          <li>
+            How Notebooks are used at Netflix: 
+            <a href="https://medium.com/netflix-techblog/notebook-innovation-591ee3221233"> 
+            Beyond Interactive, Notebook Innovation at Netflix
+            </a>
+          </li>
+          <li>
+            The Berkeley Initiative for Transparency in the Social Sciences:   
+            <a href="https://www.bitss.org/"> 
+              https://www.bitss.org/
+            </a>
+          </li>
+          <li>
+            Open Science Framework:   
+            <a href="https://osf.io/"> 
+              https://osf.io/
+            </a>
+          </li>
+          <li>
+            Statistics Done Wrong:   
+            <a href="https://www.statisticsdonewrong.com/"> 
+              https://www.statisticsdonewrong.com/
+            </a> , and especially the <a href="https://www.statisticsdonewrong.com/mistakes.html#reproducibility"> Everybody makes mistakes/ reproducibility section</a>
+          </li>
+          <li>
+            <a href="https://wol.iza.org/articles/big-data-in-economics/long">Big Data in economics</a> An IZA working paper to translate computer scientist doing "machine learning" to economist doing "regressions" and vice versa.
+          </li>
+          <li>
+            <a href="https://www.euroscipy.org/2018/descriptions/Reproducibility%20and%20exploratory%20computing%20with%20a%20Jupyter-based%20workflow.html"> 
+            Reproducibility and exploratory computing with a Jupyter-based workflow
+            </a>
+          </li>
+          <li>
+            <a href="http://www.nber.org/papers/w22989">Transparency, Reproducibility, and the Credibility of Economics Research</a>, <a href="https://youtu.be/aprFsDq5KGY?t=4095">video of the presentation.</a> 
+
+
+          </li>
+          <li>
+            This post advocates for a progressive consolidation effort of scientific code, rather than putting too high a bar on code release: 
+            http://gael-varoquaux.info/programming/software-for-reproducible-science-lets-not-have-a-misunderstanding.html
+          </li>
+          <li>
+            https://osf.io/kgnva/wiki/Open%20Science%20Literature/
+          </li>
+          <li> 
+            https://www.aeaweb.org/about-aea/committees/economic-statistics/administrative-data
+          </li>
+
+
+
+
+
+          
+      </ul>
+
+
+      https://conference.scipy.org/proceedings/scipy2018/project_jupyter.html <br>
+      https://www.nature.com/news/interactive-notebooks-sharing-the-code-1.16261
+      https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf
+      Economist in tech: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3247794
+      <br>
+</p></details>
     </div>
   </div>
 </div>
- -->
-</div>
+  </div>
+  <div class="container-fluid">
+  </div>
+
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p>Mail: 
     <a href="mailto:adrien.pacifico@univ-amu.fr"><span class="far fa-envelope"></span></a>    
   </p>
-  <!-- <address>
-  Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
-  Visit us at:<br>
-  Example.com<br>
-  Box 564, Disneyland<br>
-  USA
-  </address> -->
   <p>
     Twitter: <a href="https://twitter.com/psyfico">
               <span class="fab fa-twitter"></span>
