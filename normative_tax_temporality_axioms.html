@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Adrien Pacifico </title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124436397-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-124436397-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Adrien Pacifico</h1>
+  <p><b><font style="font-size:30px" color='red'>Warning: Alpha version <br> in construction</font></b></p> 
+  <p>Economics of taxation, Fiscal Microsimulation </p> 
+  
+</div>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="./research.html">Research</a></li>
+          <li class="active"><a href="./policy_briefs.html">Policy Briefs</a></li>
+          <li><a href="./other.html">Other</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+
+<div class="col-sm-3">
+</div>
+  <div class="col-sm-8">
+    <h4>
+    Temporally neutral tax system:
+    </h4>
+    Let \(\vec{y} = (y_1,...,y_T)\) and \(\vec{y'} = (y'_1,...,y'_T)\) two vectors of income streams.
+    A tax can be stated to be temporally neutral iif:
+    $$\sum_1^TG(y_t)) = \sum_1^TG(y'_t)) $$
+    for any \(\vec{y},\vec{y'} \) s.t. \(sum\{\vec{y}\} = sum\{\vec{y'}\}\).
+
+    Which just state that for different streams of income that lead to the same income over the considered period, the tax is be equal, then the tax is temporally neutral.
+
+    There exist a potentially large class of tax-neutral system. The most obvious one is the flat tax case, an other one is Vickrey's scheme. 
+
+    <h4>
+      A simple labor income model:
+    </h4>
+    A simple labor income model could be the one where the agent try to maximize its disposable income. <br>That could include: <br>
+     
+     An hourly wage \(w\) <br>
+     A number of hours worked \(L\) <br>
+
+     Then the monetary disposable income \(y^d\) of an active agent would be: <br>
+     $$y^d = wL - G(wL) - \bar w$$
+
+     And the one of an inactive agent would be:
+     $$y^d = G(0)$$
+
+     This simple modelisation is the one considered by test case microsimulations that is presented to the politicians and general public. One salient criterion is that "Work must pay" meaning that the disposable income should be a increasing function of the number of hours worked, or more formally \((y^d|active) > (y^d|inactive)\). We will now on assume that the tax-benefit system is statically a "Work must pay" system.<br>
+
+     However these simulations assume that agents face a perfect labor market where they can choose freely the number of hours they will work. 
+
+
+    <h4>
+      A simple labor income model with unemployment:
+    </h4>
+
+    As there exist unemployment, an unemployed person can be defined as someone that goes on the labor market but face a probability of being hired.<br>
+
+
+    An agent thus actually faces an oppotunity set of two element \(\{active, unactive\} \) one of which is actually a lottery.<br>
+
+    If the agent choose to be unactive she face a certain monetay output that is:
+    $$y^d = G(0)$$
+    as in the model without unemployment.
+
+    If the agent choose the active element of the oppotunity set, she actually choose a lottery with a probability p to be employed and a probability (1-p) to be unemployed.
+
+    $$ y^d=\begin{cases}
+    wL - G(wL) & \text{if employed}\\
+    G(0)  &\text{if unemployed}
+              \end{cases} 
+    $$ 
+
+
+    We can now compute the expected disposable income of an active individual: 
+
+    $$\mathbb{E}(y^d|active) = p(wL - G(wL)) \\+ (1-p)(G(0)) $$
+
+    <h5>
+      Result:
+    </h5>
+    If the tax is temporally neutral then in a multiple period setting:
+    $$\mathbb{E}(sum\{y^d|active\})>(sum\{\vec{y^d}|inactive\}) \; if \;  p > 0$$
+    Where \(\vec{y^d}\) is a vector of disposable income.<br>
+    <p>
+    However, if the tax is not temporally neutral this result would not always hold, in particular when the tax is not linear, embodies thresholds, or tax base in conditionnal on multiple temporality.
+    </p>
+    <p>
+      For instance, the French prime d'activité benefit is based on a monthly formula that can be approximated to a linear tax computed for each month of the quarter preceding the claim of the benefit, and the average is paid montly for the quarter following the claim. However, being employed at the date of the demand is compulsory to be elibible.
+    </p>
+    Let's consider the following streams of income y and the associated stream of benefit b. A income stream of 0 mean that the individual is unemployed.<br>
+
+    Situation A: <br>
+
+    $$\vec y = (1000,1000,1000,1000,0,0,0,0,0,0,0,0) $$
+    $$\vec h = (0,0,0,0,300,300,300,0,0,0,0,0) $$
+    This income stream would correspond to an individual earning 1000€ from January to April, then loose her job. The individual claim for its benefit in April, the first payment is made the month after in May and the same amount is paid in June and July. In July the individual is not employed thus can't claim for the benefit.<br>
+    Situation B: <br>
+
+    $$\vec y = (0,1000,0,1000,0,1000,0,0,0,1000,0,0) $$
+    $$\vec h = (0,0,0,0,100,100,100,0) $$
+    This income stream would correspond to an individual earning 1000€ every second month till June and is unemployed in July and after. The individual claim for its benefit in April, she is employed and thus can claim for the benefit. The computation is made on January, February and March. The income in January and March is 0, computed benefit is 0, 1000 for February, the computed benefit is 300. The first payment is made the month after in May and the same amount is paid in June and July. The payment is of 100€ which is the average benefit of January, February and March. In July the individual is not employed thus can't claim for the benefit.<br>
+
+
+    We see that in situation A the total disposable income is of 4900 € while in the situation B, the disposable income is of 4300 euros. Eventhough over the period the labor income has been the same.
+
+
+
+
+
+
+
+
+
+    <h4>
+      A labor income model with unemployment with cost:
+    </h4>
+    This simply introduce fixed cost to work and fixed cost to search for a job.
+
+    Fixed cost of working \(\bar{w}\), that would encompass travel expenses, creche expenses, etc.<br>
+       If the agent choose to be unactive she face a certain monetay output that is:
+    $$y^d = G(0)$$
+    as in the model without unemployment.
+
+    If the agent choose the active element of the oppotunity set, she actually choose a lottery with a probability p to be employed and a probability (1-p) to be unemployed.
+
+    $$ y^d=\begin{cases}
+    wL - G(wL) - \bar w - \bar{r} & \text{if employed}\\
+    G(0) - \bar{r} &\text{if unemployed}
+              \end{cases} 
+    $$ 
+    Where \(\bar r \) is a fixed research cost of a job. It seems reasonable to introduce such a cost as looking for a job is usually associated with a set of monetary (and non-monetary) cost such as travel expenses, printing cv.
+
+    We can now compute the expected disposable income of an active individual: 
+
+    $$\mathbb{E}(y^d|active) = p(wL - G(wL) - \bar w - \bar{r}) \\+ (1-p)(G(0) - \bar{r}) $$
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+French housing allowance in 2018 works roughly as the following:<br>
+    The retained tax base is the largest between:<br>
+
+     - The yearly taxable income two year before the year of demand divided by 12.<br>
+    - The income of the month preceding the claim. <br>
+    Then:<br>
+    - The benefit is computed with the following formula $B = 300- 0.2y$    
+
+    - The benefit if positive is paid monthly till January.<br>
+
+
+
+
+    $$(12000;0;0,0,0,0,0,0,0,0,0,0,0,0) = 0 $$
+    $$(0;50000;0,0,0,0,0,0,0,0,0,0,0,0) = 3300 $$
+    $$(0;0;1000,0,1000,0,1000,0,1000,0,1000,0,1000,0) = 3600 $$
+    $$(0;0;1000,0,1000,0,1000,0,1000,0,1000,0,1000,0) = 3600 $$
+    It is easy to show that in individual that has just 
+
+
+
+     H_t(\)
+
+
+      </div>
+    
+
+</body>
+</html>
+
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div><img src="https://github.com/adrienpacifico/adrienpacifico.github.io/blob/master/pacifico_3%20(1).jpg?raw=true" alt="W3Schools.com"></div>
+      <p>I'm a PhD Candidate at Aix-Marseille School of Economics. I will hold an ATER position at University of Cergy-Pontoise next September.</p>
+      <h3>Some Links</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+      <hr class=" hidden-sm hidden-md hidden-lg">
+    </div> -->
