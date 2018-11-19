@@ -37,11 +37,19 @@
       top: 200px;
       z-index: 9999 !important;
   }
+  hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+} 
   </style>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
   <div class="jumbotron text-center" style="margin-bottom:0">
     <h1>Adrien Pacifico</h1>
-    <p><b><font style="font-size:30px" color='red'>Warning: Alpha version <br> in construction</font></b></p> 
     <p>Economics of Taxation, Fiscal Microsimulation, Data Science </p> 
     
   </div>
@@ -91,7 +99,7 @@
         </h2>
         (Job Market Paper)<br>
         <a href="./docs/bokeh_graph.html">Graph Full Screen</a>, 
-        <a href="https://mybinder.org/v2/gh/adrienpacifico/adrienpacifico.github.io/master?filepath=Notebooks%2Fbokeh_graph_for_website_qf_lowering.ipynb">Generate Graphs and Thresholds,</a><a href="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Seminaire_docto_09_2018/index.html"> Slides.</a>
+        <a href="https://mybinder.org/v2/gh/adrienpacifico/adrienpacifico.github.io/master?filepath=Notebooks%2Fbokeh_graph_for_website_qf_lowering.ipynb" target="_blank">Generate Graphs and Thresholds with OpenFisca,</a><a href="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Seminaire_docto_09_2018/index.html"> Slides.</a>
         
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="./docs/bokeh_graph.html" >
@@ -231,7 +239,7 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
 
         <h5>Results: </h5>
         <p> We find evidence of large income effect on that population, contrary to cross-sectional analysis of elasticities, or to income tax reforms that concern the top 1% of the income distribution. It is very likely that these large income effects are due to habits formation, meaning that households do not accept to diminish their standards of living by compensating the income loss associated with the tax reform by working more. Those results are preliminary.</p>
-
+        <hr>
 
         <br>
     </div>
@@ -242,7 +250,7 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
         (with O. Bargain, D. Echevin & N. Moreau)<br>
 
         <a href="./Notebooks/cohabitants-heatmap.html">Graph Full Screen</a>, 
-        <a href="https://mybinder.org/v2/gh/adrienpacifico/adrienpacifico.github.io/master?filepath=Notebooks%2Fplotly_openfisca_cohabitants.ipynb">Generate Graphs for other family compositions.</a>
+        <a href="https://mybinder.org/v2/gh/adrienpacifico/adrienpacifico.github.io/master?filepath=Notebooks%2Fplotly_openfisca_cohabitants.ipynb" target="_blank">Generate Graphs with OpenFisca.</a>
         <div class="embed-responsive embed-responsive-4by3">
         <iframe class="embed-responsive-item"  src="./Notebooks/cohabitants-heatmap.html"></iframe>
         </div>
@@ -291,6 +299,7 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
         </p>
         
     </div>
+    <hr>
     <div id=tax_frequency>
         <h2>Tax frequency
             <a href="#tax_frequency"></a>
@@ -490,7 +499,8 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
           <ul compact>
             <li>
               <p>Based on the stream of income an individual has, she can, for the same amount of labor income, have different disposable income due to temporal consideration of the tax-benefit system. </p>
-              <p> A first example would be the French income benefit (RSA) that is based on the last three month preceding the claim for the benefit, and is paid for three months after the claim. A direct consequence is that an individual that works every second month will have a lower disposable income than one that works every second quarter.</p>
+<!--               <p> A first example would be the French income benefit (RSA) that is based on the last three month preceding the claim for the benefit, and is paid for three months after the claim. A direct consequence is that an individual that works every second month will have a lower disposable income than one that works every second quarter.</p> -->
+              <p> A first example would be the French income tax that is based on yearly income. Since it is progressive, a seasonal worker that work every year from October to March every year will pay a lower tax than an individual that works every second year.</p>
 
 
               <p> A second example, a woman that give birth directly after graduating will have no income compensation for the potential loss (or opporunity cost) in labor income, while a woman that has is employed will benefit from pre-maternal and maternal leaves.
@@ -502,18 +512,21 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
               This rise the question of weather or not it is desirable.
               Vickrey has chosen to defend the point of view that it is not by stating that the same income over the life-cycle should lead to the same disposable income.  </P> -->
 
-              <p> The French tax-benefit system has many complexities that lead to complex disincentives and incentives to work with respect to the timing of labor income interacting with the temporality rule of the tax-benefit system.
+              <p> The French tax-benefit system has many complexities that lead to complex disincentives and incentives to work with respect to the timing of labor income interacting with the temporality rule of the tax-benefit system. 
+             
+
               A precise simulation of the tax-benefits (ARE, RSA, PPA, but also in kind local benefits) would allow to simulate agents incentives to work. The use of administrative databases (CNAF data, FH-DADS) would allow to see how those disincentives generated by the temporality of the tax-benefit system impact agents behavior. If they do, it would be possible to compute the implied deadweight loss.</p>
 
               <p><b>Why is it important?:</b><br>
                 Technological advances make unqualified work less important in firms production function. Labour laws generally encompass a minimum wage that may be above the marginal productivity of the lower-skilled workers, as a consequence unemployment is important in many developed countries.
                 <br>
-                A direct consequence of unemployment is that low skilled workers usually have temporary contracts, that leads to highly volatile labor income. 
+                A direct consequence of unemployment is that low skilled workers usually have temporary contracts, that leads to highly volatile labor income.
                 </p>
+                <p>tax-benefit systems of developed country tend to have a regressive tax system when benefits are included, in the sense that the tax is concave. For instance individual that earn less than the minimum wage in France face an effective marginal tax rate that is greater than 70%. Implicitely since the tax is concave, this implicitely subsidize variations in income (meaning that an individual with varying income will earn more than an individual with steady income).</p>
 
                 <p>The way we design taxes w.r.t tax temporality would impact thoroughly individuals at the lower end of the income distribution since their income varies a lot (see <a href="#tax_frequency">Tax frequency</a>), moreover they can not be held responsible for a large part of these variations and should thus be considered as <b>brute luck</b>.</p>
                 <p>
-                Luck equlitarianism being an appeeling normative argument stating that individuals should be as well off independently of their unchose circumstances. Unemployment and temporary contracts are de-facto creating 
+                Luck equlitarianism being an appeeling normative argument stating that individuals should be as well off independently of their unchose circumstances. Unemployment and temporary contracts are de-facto creating inequalities between 
 
 
 
