@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style>
+		  .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+		    text-transform: none;
+		  }
+		</style>
+
+	</head>
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>Rich Households Taxable Income and the Lowering of the Family
+						Quotient Ceiling:</h3>
+					<h5>
+					A French natural experiment.</h5>
+					
+					<p>
+						<small><a href="http://adrienpacifico.github.io">Adrien Pacifico</a> <br> AMSE, THEMA</a></small>
+					</p>
+				
+				</section>
+		<section>
+			<section data-markdown  style =  "text-align: left;font-size: 75%">
+			## Roadmap:  
+			1. Literature review
+			2. Institutional Background
+			3. The Tax Reform in Detail
+			4. Empirical Approcach
+			5. Results
+			6. Conclusion
+
+
+
+			</section>
+		</section>
+	<section>
+		<section data-markdown  style = "font-size: 75%">
+			### Today's topic:  
+			We want to see how __rich French married couples__ (with children) reacted on the taxable income margin to a recent fiscal reform.
+			### Why is it important?  
+			 1.   
+			     * Income tax is an important redistributive instrument.  
+			     * Behavioral reactions of households are crucial for the Equity-Efficiency Tradeoff ( [Mirlees(1971)](), [Saez(2001)]()).
+			 2.  The 9 th decile of the income distribution account for most of the aggregated income tax.
+
+
+		</section>
+
+		<section data-markdown  style = "text-align: left;">
+			### What do we know?  
+			A very large literature exists, and can be splitted in two (closed) fields of research.
+
+			*  The Labor economics literature  [(Blundel & al (1999), Keane(2011))]( fdsqf)
+			*  The Elasticity of Taxable Income literature [(Saez & al (2012))]( dfq)
+
+
+		</section>
+		<section data-markdown  style = "text-align: left;">
+			### These two literatures find very similar results:
+			  1. Behavioral reactions are very small.
+			  2. Married women reacts, mostly on the extensive margin.
+			  3. While substitution effects are small, income effects are neglictable.
+
+
+		</section>
+
+	</section>
+
+	<section data-background="#cddcdd"><!-- IR & QF -->
+		<section data-markdown>
+			### Institutional Background
+		</section>
+		<section data-markdown style = "text-align: left;">
+			The reform we are going to look at is a lowering of a ceiling that determines the maximum per child tax-deduction.  
+
+			It happened twice in 2012 and 2013. The per child maximum tax-break has been shifted from 2336 € to 2000 and then to 1500 €.
+			
+		</section>
+		<!-- 
+http://www.lefigaro.fr/conjoncture/2013/06/03/20002-20130603ARTFIG00425-le-gouvernement-choisit-d-abaisser-le-plafond-du-quotient-familial.php -->
+
+		<section style = "text-align: left; font-size:71%;">
+			
+			<h3> Timing: </h3>
+			<ul>
+				<li><b>March 2011</b>: François Hollande has declared himself as a candidate to the French presidency.</li>
+				<li><b>October 2011</b>: François Hollande won the left primary.</li>
+
+				<li><b>January 2012</b>: He conveys the idea of the reform in unprecised manner.</li>
+				<li><b>May 2012</b>: François Hollande won against former president Nicolas Sarkory with 51.62% of the votes</li>
+				<br>
+				<li><b>September 2012: </b> the lowering from 2336 euros to 2000 euros is annonced.</li>
+				<li><b>December 2012: </b> the law is passed and applied to 2012 incomes. Households discover their "new" tax in January or <b>May 2013</b>.</li>
+
+				<li><b>September 2013:</b>  new lowering to 1500 € (voted in december) and applied to 2013 incomes, Households discover their "new" tax in January or <b>May 2014</b>.</li>
+	
+			</ul>
+			</section>
+
+			<section style = "text-align: left; font-size:71%;">
+			<h3> Reaction: </h3>
+			<ul>
+				<li><b>Jan-Dec 2011</b>: During year 2011, it was hard to plan the reform <br> \(\implies \) No behavioral reaction in 2011.</li>
+				<li><b>Jan-Dec 2014</b>: The reform impacted households fully on their 2013 income <br> \(\implies \) They can fully react in 2014.</li>
+			</ul>
+			
+		</section>
+
+
+
+
+	</section>
+
+	<section data-background="#dddddd"> <!-- IR & QF -->
+		<section data-markdown>
+		## The Family Quotient Ceiling
+		</section>
+
+		<section  style = "text-align: left;">
+			<h3>The Piecewise Linear Tax Scheme:</h3>
+			A piecewise linear tax scheme is a serie of tax brackets with their associated a tax rates.
+				<img data-src="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Beamer/images/MTR_for_single.png">
+			
+		</section>
+
+		<section>
+			<table border="1" class="dataframe">
+			  <thead>
+			    <tr>
+			      <th></th>
+			      <th colspan="2" halign="left">2011</th>
+			    </tr>
+			    <tr>
+			      <th></th>
+			      <th>Rate</th>
+			      <th>Threshold</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th>0</th>
+			      <td>0</td>
+			      <td>0</td>
+			    </tr>
+			    <tr>
+			      <th>1</th>
+			      <td>0.055</td>
+			      <td>5,963</td>
+			    </tr>
+			    <tr>
+			      <th>2</th>
+			      <td>0.14</td>
+			      <td>11,896</td>
+			    </tr>
+			    <tr>
+			      <th>3</th>
+			      <td>0.3</td>
+			      <td>26,420</td>
+			    </tr>
+			    <tr>
+			      <th>4</th>
+			      <td>0.41</td>
+			      <td>70,830</td>
+			    </tr>
+			  </tbody>
+			</table>
+		</section>
+
+		<section style = "text-align: left; font-size:71%;">
+			<h3>The family quotient</h3>
+			It consist of dividing the tax base by a given amount of fiscal shares in order to apply it to the piecewise linear tax scheme: <br> <br>
+$$
+T(y, \text{fiscal shares}) = \mathcal{P} \left( \frac{
+	\sum_{i} y_i}
+	{  \text{fiscal shares}} \right) \times \text{fiscal shares}
+$$
+<br> <br>
+	The number of additional fiscal share per child is 0.5 share for the two first children, and 1 share for following children. 
+
+
+		</section>
+		<section  >
+			<img data-src="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Beamer/images/MTR_for_single_and_couple.png">
+		</section>
+
+
+
+		<section  >
+			<img data-src="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Beamer/images/MTR_for_single_couple_1_child.png">
+		</section>
+		<section  style = "text-align: left;">
+					However there exist a ceiling limiting the fiscal gain per half fiscal share to 2336 €.
+					<img data-src="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Beamer/images/MTR+Chil_fiscal_gain_1_child_3.png">
+		</section>
+		<section  style = "text-align: left;">
+					However there exist a ceiling limiting the fiscal gain per half fiscal share to 2336 €, and has been lowered to 1500 € in 2013.
+					<img data-src="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Beamer/images/MTR+Chil_fiscal_gain_1_child_4.png">
+		</section>
+
+		
+		<section data-background="#dddddd"><iframe class="stretch" src="/Users/adrienpacifico/Informatique/adrienpacifico.github.io/docs/bokeh_graph.html" >
+				  </iframe>
+		</section>
+		<section style="text-align: left;font-size:71%;">
+			It implies a series of thresholds given the number of children at which the MTR changes or at which households will face a lump sum decrease of their disposable income.
+			<div >
+<table border="1" class="dataframe" >
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>2011</th>
+      <th>2013</th>
+    </tr>
+    <tr>
+      <th>Children #</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>63158</td>
+      <td>58388</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>73615</td>
+      <td>63426</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>94419</td>
+      <td>73874</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>115287</td>
+      <td>84178</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>136064</td>
+      <td>94509</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>150656</td>
+      <td>104633</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+
+		<section  >
+			<h3> An important loss: </h3>
+					<img data-src="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Beamer/images/loss_in_relative_disposable_income.png">
+		</section>
+		<section  style = "text-align: left;">
+			No other tax reforms or policy happened on the \(\text{50 000}\) €, \(\text{200 000}\) € over the 2012-2014 period.<br> <br>
+
+			To the exception of: 
+			<ul><li>The suppression of a unique tax transfer on capital.</li>
+				<li>A change in the retirement age to get a full pension .</li>
+			</ul>
+
+            <br><br>
+            Figures has been generated with <a href="">Openfisca</a>, a more compleate description of the reform will be (soon) put on <a href="">www.github.io/adrienpacifico/qf_lowering</a> in a auto-executable Jupyter notebook format.
+		</section>
+
+
+
+
+	</section>
+
+
+
+
+	<section data-background = "#baccad">
+		<section  data-markdown>
+		## Empirical Approach
+		</section>
+		<section  data-markdown style = "text-align: left;">
+		The analysis of behavioral reactions with respect to net of tax wage changes face an identification issue:  
+		* A change in marginal tax rate (MTR), happens on a specific part of the income distribution.
+		* As a consequence it is not possible to disentengle the impact of a change in the income distribution, and a behavioral reaction to a change in net-of-tax income.
+		</section>
+
+		<section  data-markdown style = "text-align: left;">
+		As noted by Piketty (1999) the family quotient adds an other source of variation that allows to control for the change in the income distribution.  
+
+				
+		The family quotient embodies a triple-difference estimator.
+
+
+		Even if that additionnal source of variation as been used implicitely (or explicitely) by numerous French studies (Carbonier (2014), Lehman et al (2014), Sicsic (2018)), no recent studies has used it with a triple-difference setting.
+		</section>
+
+		<section  data-markdown style = "text-align: left;">
+		The reform creates three separate groups:  
+		* An untreated one that is below the two thresholds.  
+		* One that face a change in MTR (Treatment 1).
+		* One that face a lump sum decrease in disposable income (Treatment 2).  
+
+		We make the assumption that in the absence of reform, households would have stayed in the same position in the income distribution.
+
+		</section>
+
+		<section  data-markdown style = "text-align: left;">
+		#### The Échantillon Démographique Permanent:  
+		* Large dataset composed of 62 databases.
+		* Over 2 millions households in panel, with fiscal returns.
+		* Large set of controls.  
+
+		
+		$$~$$
+
+
+
+		##### What I Do:  
+		* Use the taxable income in 2011 and 2014.
+		* On married households with and without children.
+		* Taxable income between 50 to 200k € in 2011 or in 2014.
+
+		</section>
+
+		<section  >
+
+					<img class="stretch" data-src="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Seminaire_docto_09_2018/Latex_tables_in_png/concerned_households.png">
+		</section>
+
+
+		<section style = "text-align: left;">
+		Classical diff-in-diff:  
+		  $$  y_{it} = \beta_0 + \beta_1 \text{Post}  + \beta_2 \text{Treated} \\ + \delta  \text{Treated} \times \text{Post}  + c_i + \epsilon_{it} $$
+		 <br>
+
+		Which can be estimated in first difference:
+		$$  \Delta y_{i} =   \beta_1+ \delta_1  \text{Treated} + \epsilon_{i}$$
+		</section>
+
+		<section style = "text-align: left;">
+		In our case we can do:  
+		$$  \Delta y_{i} =   \beta_0+ \beta_1  \text{Treatment}_1 +\beta_2  \text{Treatment}_2 + \epsilon_{i}$$
+		</section>
+		<section style = "text-align: left;">
+					<table>
+						<thead>
+							<tr>
+								<th>Intercept</th>
+								<th>Treatment 1</th>
+								<th>Treatment 2</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>5315*** <br>
+								 (37)</td>
+								<td>-218** <br> (105) </td>
+								<td>-823*** <br> (81) </td>
+							</tr>
+
+						</tbody>
+						<thead> <tr><td></td>
+									<td></td>
+									<td></td>
+						</tr></thead>
+					</table>
+					<br>
+			That estimation doesn't take into account potentiel changes due the change in the income distribution. <br>
+				<br>
+			It also does not take into account potentiel difference in trend based on family composition.
+		</section>
+		<section style = "text-align: left; font-size:71%;">
+			<h3>A triple-difference estimator:</h3>
+			      <p>$$\begin{align*}
+\Delta y_i &= \beta_0 + \sum_{i=1}^{6} {\beta_i \text{Children}_i} + \sum_{j=1}^{6} {{}_{b}\delta_i \text{Between}_i}  + \sum_{i=1}^{6} {{}_{o}\delta_i \text{Over}_j} \\
+    &+ \sum_{i=1}^6 {{}_{b}\gamma_{i} \text{Children}_i \times \text{Between}_i} \\
+    &+ \sum_{i=1}^6 {{}_{o}\gamma_{i} \text{Children}_i \times \text{Over}_i} \\
+    & + \epsilon_i
+\end{align*}$$ </p>
+		</section>
+
+
+	
+	</section>
+
+<section>
+	<section>
+		<h2> Results </h2>
+	</section>
+
+		<section  >
+
+					<img class="stretch" data-src="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Seminaire_docto_09_2018/Latex_tables_in_png/triple-diff.png">
+		</section>
+
+		<section  >
+
+					<img class="stretch" data-src="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Seminaire_docto_09_2018/Latex_tables_in_png/type_of_income.png">
+		</section>
+		<section  >
+
+					<img class="stretch" data-src="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Seminaire_docto_09_2018/Latex_tables_in_png/retirement.png">
+		</section>
+
+		<section  style = " font-size:71%;">
+			<h4>How well the reform is fitted by the estimation ?</h4>
+$$\begin{align*}
+\Delta T =& \sum_{i = 1}^{6} \beta^{O}_{i} child_i \times Over_i + \sum_{i=1}^{6} \beta^{MTR_O}_i \Delta y \times child_i \times Over_i  \\ 
+&+ \sum_{i=1}^{6} \beta^{MTR_B}_i \Delta y \times child_i \times Between_i \\
+&+ \gamma \Delta y \times \text{ Not touched by reform} \\
+&+ \theta  \times \text{Not touched by reform}  + \epsilon_i 
+\end{align*} $$
+
+		</section>
+		<section  style = " font-size:71%;">
+			<h4>How well the reform is fitted by the estimation ?</h4>
+
+					<img class="stretch" data-src="/Users/adrienpacifico/Dropbox/Academique/These_adrien_pacifico/Thesis/3-impact_lowering_of_qf/6-Slides/Seminaire_docto_09_2018/Latex_tables_in_png/matching_real_tax.png">
+		</section>
+
+
+ </section>
+ <section>
+		<section  data-markdown style = "text-align: center;">
+		## Conclusion 
+		</section>
+
+
+ 		<section  data-markdown style = "text-align: left;">
+		  
+		* A study on top 10% households without the top 1%.  
+		* First study to use the EDP for tax related purposes.
+		* Relates on a unique natural experiment that allows to capture the income effect.
+		* A (new) approach that allows to be structurally free of the change in distribution bias.
+		</section>
+
+ 		<section  data-markdown style = "text-align: left;">
+		  
+		* I find large income effect, most likely due to households that wants to keep up with their standars of living. 
+		* The income effect usually dominate the substitution effect, but the substitution effect become more important for larger income.
+		* Women tend to react less than men.
+
+		</section>
+
+		<section  data-markdown>
+		
+
+		### One more thing...
+
+
+
+		</section>
+		<section  data-markdown>
+		* Economics is usually non reproducible [Chang & Li (2015)](https://www.federalreserve.gov/econresdata/feds/2015/files/2015083pap.pdf) .
+		* Tax reform analysis is very sensible to data selection [kopczuk (2005)](http://www.columbia.edu/~wk2110/bin/taxBase.pdf).
+		* Availability of code (data preparation and estimation) is not good.
+		* Administrative data leads to a very high (fixed) reproducibility cost.
+		* One solution is to publish all the code, with as much non identifying output as possible, that allows to see exactly what has been done to attain such results.
+
+		</section>
+
+ </section>
+
+
+
+</section>
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			Reveal.configure({ slideNumber: 'c/t' });
+
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				math: {
+		mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					},
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true },
+
+				]
+			});
+
+
+		</script>
+
+	</body>
+</html>
+
+
+
+					<section>
+						<h2>Vertical Slides</h2>
+						<p>Slides can be nested inside of each other.</p>
+						<p>Use the <em>Space</em> key to navigate through all slides.</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level 1</h2>
+						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+					</section>
+					<section>
+						<h2>Basement Level 2</h2>
+						<p>That's it, time to go back up.</p>
+						<br>
+						<a href="#/2">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<h2>Slides</h2>
+					<p>
+						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Point of View</h2>
+					<p>
+						Press <strong>ESC</strong> to enter the slide overview.
+					</p>
+					<p>
+						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+					</p>
+				</section>
+
+				<section>
+					<h2>Touch Optimized</h2>
+					<p>
+						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+					</p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
+
+						Write content using inline or external Markdown.
+						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+
+						```
+						<section data-markdown>
+						  ## Markdown support
+
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+						</section>
+						```
+					</script>
+				</section>
+				<section data-markdown>
+					## Hello comment ça va vielle branche 
+
+				</section>
+				<section>
+					<section id="fragments">
+						<h2>Fragments</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's different types of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p>
+							<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
+							<span style="display: inline-block;" class="fragment fade-up">up, </span>
+							<span style="display: inline-block;" class="fragment fade-down">down, </span>
+							<span style="display: inline-block;" class="fragment fade-left">left</span>
+						</p>
+						<p class="fragment fade-in-then-out">fade-in-then-out</p>
+						<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
+						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
+					</section>
+				</section>
+
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						reveal.js comes with a few themes built in: <br>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
+
+				<section>
+					<section data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+						<h2>Tiled Backgrounds</h2>
+						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2>... and GIFs!</h2>
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						You can override background transitions per-slide.
+					</p>
+					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+				</section>
+
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+
+				<section>
+					<h2>Marvelous List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The nice thing about standards is that there are so many to choose from</q> and block:
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Speaker View</h2>
+					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+					<p>Press the <em>S</em> key to try it out.</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
+					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section>
+
+				<section>
+					<h2>Global State</h2>
+					<p>
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the page background.
+					</p>
+				</section>
+
+				<section data-state="customevent">
+					<h2>State Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+					</p>
+				</section>
+
+				<section>
+					<h2>Much more</h2>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="https://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
+
