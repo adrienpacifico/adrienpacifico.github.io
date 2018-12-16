@@ -1,0 +1,385 @@
+\documentclass[a4paper,11pt]{article} % fonte 11 points, papier a4
+
+%\usepackage[francais]{babel}    % faire du français
+%\usepackage[colorlinks = True,urlcolor=blue ]{hyperref}          %reference
+
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+\newcommand{\myhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+
+\usepackage{textcomp} 
+
+\usepackage[utf8]{inputenc}
+
+%\usepackage[latin1]{inputenc}   % accents dans le source
+%\usepackage[T1]{fontenc}        % accents dans le DVI
+\usepackage{url}                % citer des adresses électroniques et des URL
+
+% La page
+%#########
+\pagestyle{empty}               % On ne numérote pas les pages
+\usepackage{vmargin}            % redéfinir les marges
+\setmarginsrb{2cm}{2cm}{2cm}{2cm}{0cm}{0cm}{0cm}{0cm}
+
+% Marge gauche, haute, droite, basse; espace entre la marge et le texte à
+% gauche, en  haut, à droite, en bas
+
+% Je redéfinis le comportement des guillemets
+%#############################################
+%\catcode`\«=\active             
+%\catcode`\»=\active
+%\def«{\og\ignorespaces}
+%\def»{{\fg}}
+
+% Diverses nouvelles commandes
+%#############################
+
+% Pour laisser de l'espace entre les lignes du tableau
+\newcommand\espace{\vrule height 20pt width 0pt}
+
+% Pour mes grands titres
+\newcommand{\titre}[1]{%
+	\begin{center}
+	\rule{\textwidth}{1pt}
+	\par\vspace{0.1cm}
+        \textbf{\large #1}
+	\par\rule{\textwidth}{1pt}
+	\end{center}
+	}
+
+
+
+
+% Début du document
+%###################
+\begin{document}
+%###################
+\definecolor{black-gray}{gray}{0.331}
+
+
+
+%\begin{center}
+%\par\textbf{\huge Curriculum Vitae}
+%\end{center}
+
+\vspace{1.5cm}
+
+\begin{center}
+
+{\LARGE Adrien Pacifico} \\
+
+%Centre de la Vieille Charité\\
+%2, rue de la Charité\\
+%13\,002 Marseille\\
+%France\\
+
+
+
+
+\medskip
+
+
+
+\end{center}
+
+
+\vspace{0.25in}
+
+\begin{minipage}{0.50\linewidth}
+\begin{tabular}{lll}
+ Address: & Laboratoire THEMA\\
+ & Université de Cergy-Pontoise\\
+ & 33, boulevard du Port\\
+&95011 Cergy-Pontoise Cedex\\
+&France\\
+
+
+\end{tabular}
+
+
+\end{minipage}
+\begin{minipage}{0.50\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (+33)781361856 \\
+    Email: & \href{mailto:adrienpacifico@gmail.com}{\tt adrienpacifico@gmail.com} \\
+     Citizenship: & French \\
+     Languages:&French (native), English (fluent)\\ 
+     Website: &\url{www.adrienpacifico.github.io}
+%Birth date: & 1989-05-29 \\
+
+  \end{tabular}
+\end{minipage}
+\vspace{0.3cm}
+
+
+\titre{Research interest}
+%###################
+
+\begin{tabular}{c@{}p{0.8\textwidth}}
+
+&Taxation, Fiscal Microsimulation, Household economics, Equality of Opportunity, Reproducibility in Economics.
+%\textbf{Primary} & Fiscal Microsimulation, Households Taxation, Taxation\\
+% \textbf{Secondary} & Equality of Opportunity, Fertility Determinants, Couples Formation and Dissolution, Gender Discrimination\\
+%  \textbf{Tertiary} & Reproducibility in Economics\\
+%  
+\end{tabular}
+
+\titre{Positions}
+%###################
+
+\begin{tabular}{c@{:  }p{0.8\textwidth}}
+\textbf{2018-2019} & Temporary Lecturer and Research Assistant (ATER) at Cergy-Pontoise University (THEMA) \\
+ \textbf{2014-2019} & PhD Candidate at Aix-Marseille School of Economics (Advisors: O. Bargain, A. Trannoy) \\
+  \textbf{2014-2017} & Member of IDEP\\
+  
+\end{tabular}
+\titre{Education}
+%#############
+
+\begin{tabular}{c@{:  }p{0.8\textwidth}}
+
+
+\espace
+\textbf{2014--2019 } & Aix-Marseille School of Economics PhD program (PhD Advisors: Alain Trannoy \& Olivier Bargain) \\
+
+
+\espace
+\textbf{2012--2014} & Aix-Marseille School of Economics graduate program.  \\
+
+\espace
+\textbf{Fall 2012} & Visiting student, Bishop's University (Canada). \\
+
+\espace
+\textbf{2011--2014} & Magistère ingénieur économiste  (Faculté d'économie gestion, Marseille, France). \\
+
+\espace
+\textbf{2009--2012} & Bachelor in economics (Faculté d'économie gestion, Marseille, France). \\
+
+
+\end{tabular}
+\titre{Teaching experience}
+%###################
+\begin{itemize}
+\item \textbf{2019} : Will teach macroeconomics, 1st year bachelor students (60 hours, CM-TD).
+\item \textbf{2014-2015} : Teaching assistant in mathematics, 1st year bachelor students (60 hours, assisting Antonin Macé).
+\item \textbf{2014-2016} : Teaching assistant in Microsimulation, M2 students (24 hours, assisting Mahdi Ben Jelloul).
+
+\end{itemize}
+\newpage
+\titre{Publication}
+%###################
+
+\begin{tabular}{c@{:  }p{0.8\textwidth}}
+\espace
+ \textbf{2016} & Fiscalité des familles aisées sous le quinquennat Hollande: vers un crédit d'impôt par enfant ?   \emph{Revue Française de Finances Publiques n°133, p.209} (with O. Bargain \& A. Trannoy).
+
+
+\end{tabular}
+
+
+
+
+
+
+
+
+
+
+\titre{Policy briefs \& Press}
+%###################
+\begin{itemize}
+\item \myhref[black-gray]{{https://www.idep-fr.org/sites/default/files/idep/idep_analyses_n7.pdf}}{\emph{Abandonner la décote, cette congère fiscale.}} \\ IDEP Analyses N°7 (with A. Trannoy) ; cited in \myhref[black-gray]{https://www.lesechos.fr/04/02/2016/LesEchos/22122-011-ECH_les-effets-pervers-du-bareme-de-l-impot-montres-du-doigt.htm}{\emph{Les Échos}, 2016-02-04, p.3.}
+\item  \myhref[black-gray]{http://abonnes.lemonde.fr/idees/reactions/2015/07/08/les-petits-pas-du-grand-soir-fiscal_4674881_3232.html}{\emph{Les petits pas du "grand soir"  fiscal}} \\Le Monde du Jeudi 9 juillet 2015  (with O. Bargain \& A. Trannoy).
+\item  \myhref[black-gray]{https://www.idep-fr.org/sites/default/files/idep/idep_analyses_n6.pdf}{\emph{Fiscalité des familles aisées : vers une forfaitarisation de l'enfant.}} \\ IDEP Analyses N°6 (with O. Bargain \& A. Trannoy).
+\end{itemize}
+
+
+
+
+
+
+
+\titre{Conferences}
+%#############
+
+
+
+\begin{tabular}{c@{ :  }p{0.8\textwidth}}
+\espace
+\textbf{2018-06-25} & \textbf{Rich households taxable income and the lowering of the family quotient ceiling: A French natural experiment}
+17th Journées LAGV - international conference in public economics, Aix-en-Provence, France \\
+\textbf{2017-07-13} & \textbf{ The Impact of Tax Frequency: Theoretical and Empirical Investigations} (in collaboration with Olivier Bargain \& Alain Trannoy) 
+18th annual Meeting of the Association for Public Economic Theory, Paris, France \\
+\textbf{2016-03-15} & \textbf{ Tax frequency : Theoretical and empirical analysis} (in collaboration with Olivier Bargain \& Alain Trannoy)  École thématique CNRS Évaluation des politiques publiques, organisée par \emph{"La Fédération Travail, Emploi, Politiques Publiques"} (FR CNRS n° 3435) \\
+\textbf{2015-12-17} & \textbf{ Du sacrifice égal au transfert forfaitaire par enfant : un bilan des réformes du traitement fiscal de la famille} (in collaboration with Olivier Bargain \& Alain Trannoy)  Évaluations des politiques publiques, organized by \emph{"direction générale du Trésor"}, and the french economic association (AFSE) \\
+\end{tabular}
+
+
+\titre{Hackathons}
+%#############
+
+\begin{tabular}{c@{ :  }p{0.8\textwidth}}
+\espace
+
+
+
+\textbf{2016-11} & \textbf{
+\href{https://www.etalab.gouv.fr/openfisca-au-hackathon-sur-la-fiscalite-de-dakar}{La fiscalité à l'épreuve de la modernité},} organised by \emph{IMF \& La Direction générale des Impôts et des Domaines du Sénégal}, Dakar, Senegal \\
+\textbf{2016-04} & \textbf{
+\href{https://www.etalab.gouv.fr/codeimpot-un-hackathon-autour-de-louverture-du-code-source-du-calculateur-impots}{ \#CodeImpot},} organised by \emph{Etalab \& Direction générale des Finances publiques}, Paris, France \\
+\textbf{2015-12} & \textbf{ 
+\href{https://www.data.gouv.fr/en/reuses/hackrepnum-un-hackathon-recherche-autour-de-la-loi-sur-le-numerique/}
+{\#HackRepNum}} , organised by \emph{HackYourPhD \& LISIS}, Paris, France \\
+
+%\textbf{09/2015} & \textbf{Hackthon on basic income and OpenFisca} , organised by \emph{MRDB}, Paris, France \\
+
+\end{tabular}
+\newpage
+
+
+
+\titre{Computer Skills \& Languages}
+%###################
+
+\begin{itemize}
+\item \textbf{Programming}:  \myhref[black-gray]{https://www.python.org}{Python}(main language), \myhref[black-gray]{https://www.gnu.org/software/bash/}{Bash}, \LaTeX, Sas \\
+  \hspace*{0.1cm}- \emph{Currently learning}: Julia, Tensorflow, R, HTML5
+\item \textbf{Microsimulation}:   \myhref[black-gray]{https://fr.openfisca.org}{OpenFisca} (Contributor)
+\item \textbf{Version Control}:  \myhref[black-gray]{https://git-scm.com}{git}, \myhref[black-gray]{https://gitless.com}{gitless}
+
+
+\item \textbf{Collaborative tools}:  \myhref[black-gray]{https://www.github.com/}{GitHub}, \myhref[black-gray]{https://www.github.com/}{Slack}, Waffle.io, \myhref[black-gray]{https://colab.research.google.com/}{Google Colab}, \myhref[black-gray]{https://visualstudio.microsoft.com/services/live-share/}{VS Live Share}
+
+ \item \textbf{Continuous Integration}:  \myhref[black-gray]{https://travis-ci.com/}{Travis CI}
+\item \textbf{Mathematics}: Sympy, Sarge
+\item \textbf{Cloud computing}: \myhref[black-gray]{https://aws.amazon.com/fr/}{AWS}, \myhref[black-gray]{https://www.kaggle.com/docs/kernels}{Kaggle Kernels}, \myhref[black-gray]{https://www.scaleway.com}{Scaleway}
+
+
+
+ Python Specific
+ \vspace{-0.5cm}
+ \begin{flushleft}
+\line(1,0){310}
+\end{flushleft}
+ \item \textbf{Statistics}: \myhref[black-gray]{http://pandas.pydata.org}{Pandas}, \myhref[black-gray]{http://www.statsmodels.org/stable/}{Statsmodels}, \myhref[black-gray]{https://bashtage.github.io/linearmodels/}{linearmodels}, \myhref[black-gray]{https://scikit-learn.org/stable/}{Scikit-Learn} 
+
+\item \textbf{Web scraping}:  \myhref[black-gray]{https://www.crummy.com/software/BeautifulSoup/}{Beautiful Soup}
+\item  \textbf{Unit testing}: \myhref[black-gray]{https://docs.pytest.org/}{Pytest},  \myhref[black-gray]{https://nose.readthedocs.io/en/latest/}{Nose}
+\item  \textbf{Plotting}: \myhref[black-gray]{https://matplotlib.org}{Matplotlib},  \myhref[black-gray]{https://seaborn.pydata.org}{Seaborn}, \myhref[black-gray]{https://bokeh.pydata.org/en/latest/}{Bokeh},  \myhref[black-gray]{https://plot.ly/python/}{Plotly},  
+\myhref[black-gray]{https://altair-viz.github.io}{Altair}
+ \vspace{0.3cm}
+ 
+ 
+Jupyter Specific
+ \vspace{-0.7cm}
+ \begin{flushleft}
+\line(1,0){310}
+\end{flushleft}
+ \vspace{-0.6cm}
+ \item \textbf{IDE}: \myhref[black-gray]{https://jupyter.org}{Jupyter Notebook}, \myhref[black-gray]{https://jupyter.org}{Jupyter Lab}, \myhref[black-gray]{https://nteract.io}{nteract}
+  \item \textbf{Cloud }: \myhref[black-gray]{https://mybinder.org}{Binder}, \myhref[black-gray]{https://colab.research.google.com/}{Google Colab}
+  \item \textbf{Workflow}: \myhref[black-gray]{https://nbconvert.readthedocs.io/en/latest/index.html}{nbconvert} (with advanced usage allowing  reproducibility  and version control in my projects), \myhref[black-gray]{https://github.com/jupyter/nbdime}{nbdime}, \myhref[black-gray]{https://github.com/mwouts/jupytext}{Jupytext}
+
+  \item \textbf{Widgets}: \myhref[black-gray]{http://beakerx.com}{BeakerX}, \myhref[black-gray]{https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/}{jupyter\_contrib\_nbextensions} , \myhref[black-gray]{https://github.com/jupyter-widgets/ipywidgets}{ipywidgets}
+ 
+\end{itemize}
+
+\titre{Databases}
+%###################
+
+\begin{itemize}
+\item \textbf{Echantillon Démographique Permanent (EDP)}:  EDP is a French big administrative database that contains many administrative sources such as income tax returns, local tax returns, administrative payslips, civil registry (birth, marriage), census surveys (diplomas). It allows to follow over 2 million households in panel over 6 years with individualized information (about 6 millions persons). It is constituted of more than 50 databases for over 50Gb of data.
+\item \textbf{Enquête Revenus fiscaux et sociaux (ERFS)}:  ERFS is a match between the French labor survey (EEC), fiscal returns (POTE) and social benefits payments (CNAF). It contains more than 40 000 households, it contains an \emph{activity calendar} that can be used to derive monthly information.
+
+\item \textbf{Other Databases}:  Budget des Familles, Enquête logement
+\end{itemize}
+\newpage
+
+
+
+
+\titre{Work in progress}
+%###################
+\begin{itemize}
+
+
+
+
+
+
+\item{\emph{Tax frequency (with O. Bargain \& A. Trannoy)}}. \\
+The pioneering work of Vickrey  (1939, 1947) on the income-tax frequency has not inspired a lot of further studies. We propose an investigation of this issue both from a theoretical and empirical viewpoint within an annual framework. We first show that increasing the income-tax frequency (from an annual tax basis to a monthly tax basis) is Pareto-improving for any convex tax scheme. This result is obtained for the same tax revenue. Welfare gains are all the larger as the infra-annual volatility of income is large and the propensity to save is low, implying that the benefits should be larger for the bottom of the income distribution. We submit an empirical illustration using French administrative data and simulations of the current tax-benefit system. Despite that this system is not convex over the whole income domain, we show that increasing the tax frequency can lead to substantial social welfare gains. 
+
+%\item  {\emph{An evaluation of child related tax-benefits on fertility, work, civil union and divorce. }} \\ 
+%French high income households benefit from two main instruments with respect to children : a tax break that embodies an equal sacrifice spirit called \emph{quotient familial}, and a family benefit called \emph{allocation familiale} depending only on the number of children. Two reforms in 2012 and 2015 have decreased the net tax break and transfers towards households which monthly income is over 6 000 euros. These reductions  impact disposable income significantly : it goes up to 6\% for a married couple with 3 children earning 8 500 euros. Based on panel data containing individualised administrative tax returns we use these two natural experiments to evaluate their individual and joint impact on working hours, fertility, civil union and divorce. 
+\item  {\emph{Rich households taxable income and lowerings of the child tax break ceiling: A French natural experiment.}} \\ 
+ This paper evaluates the taxable income behavioral reactions of French high-income households to a tax change. I focus on a 2013 tax reform creating a unique framework that allows to control for  position in the income distribution. With this framework I temperate the \emph{mean reversion bias} and the  \emph{change in the distribution bias} usually associated with  the assessment of elasticities with panel data. I can do so because the reform treats differently households based on income but also family composition. The   analysis is conducted with a recently released big administrative panel dataset. I run a \emph{triple-dfference} regression on the  change in taxable income depending on the group an high-income household belongs to: the untreated (no effect), the ones facing only a change in their disposable  income (pure income effect), and those facing a change in marginal tax rate and disposable income (income and substitution effect). Quite surprisingly and contrasting with the rest of the literature, I find 
+ that the income effect strongly dominates the substitution effect, that women react less than men, and that a significant part of the effect is driven mainly by workers nearing retirement by reacting on the extensive margin.
+
+\item {\emph{Tax optimization within household: a test of the collective model (with O. Bargain, D. Echevin \& N.Moreau)}}.\\ French tax-households benefit of tax rebate from the presence of children in the fiscal-household. French cohabiting couples are registered as two tax units, and each child can be allocated in each tax unit. Due to some complex rules of the french income tax, there exists an optimal allocation of children between tax-households to minimize the household income tax. We test with recently available administrative data whether couples maximize their disposable income through optimal allocation of children within fiscal-household.
+\end{itemize}
+
+
+
+
+\newpage
+
+\titre{Internships}
+%###################
+
+\begin{itemize}
+
+\item \textbf{April--August 2014}:   \textbf{Microsimulation}\\
+Commissariat général à la stratégie et à la prospective (joint with Etalab), \emph{Paris}, supervised by Mahdi Ben Jelloul.\\
+Developed and worked on Openfisca, an Opensource microsimulation software.\\
+\url{http://www.openfisca.fr/}
+
+\item \textbf{May--July 2013}: \textbf{Research}\\
+GREQAM, Marseille, (France)\\
+ Worked on decision under total uncertainty and on national public spendings (under the direction of Nicolas Gravel)
+ 
+ \item \textbf{July 2012}: \textbf{Management Control}\\
+Bacardi, Geneva, (Switzerland)\\
+Created a database of FTE workers in Bacardi's plants. 
+
+ \item \textbf{June 2012}: \textbf{Research}\\
+GREQAM, Marseille, (France)\\
+ Translated experiments from English to French (under the direction of Nobuyuki Hanaki)
+
+
+ 
+\end{itemize}
+
+
+%\titre{Academic Life}
+%%#############
+%
+%\begin{tabular}{c@{ :  }p{0.8\textwidth}}
+%
+%\textbf{2012-2014} &Student representative at \emph{Faculté d'Économie et de Gestion, Aix-Marseille Université (conseil d'UFR) } \\
+%\end{tabular}
+
+
+\newpage
+
+
+
+
+
+
+\newpage
+
+
+
+
+\end{document}
+
+
+\titre{Research Interest}
+%###################
+
+Economics of Taxation, Microsimulation, Public Economics, Normative Economics.
