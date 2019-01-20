@@ -18,6 +18,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+                <script type="text/javascript" charset="UTF-8" src="./Bilan démographique 2018 - Insee Première - 1730_files/graphsvg.js"></script>
 
   <script>"https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"</script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/stylesheets/jquery.tocify.min.css">
@@ -477,34 +478,56 @@ différent de celui du ''groupe test''. ">Piketty(1998)</a>, the family quotient
         </h4>
           <ul compact>
             <li>
+              <p></p>
+                France is facing a decline in its fertility rate over the last decade since 2014 from 2 to 1.88 child per women in 2018.<sup><a href="#fn1" id="ref1">1</a></sup> Over the same period, transfers towards households with children have changed: the total transfer per child has been increased for low-income households and decreased for high-income households.
+              </p>
+<!-- 
+              <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item"  src="./bilan.html"></iframe>
+                </div> -->
               <p>
-              Many studies have found a positive link between tax exemption per dependent children and fertility (<a href="https://www.jstor.org/stable/pdf/2006683.pdf?seq=1#page_scan_tab_contents">Whittington & al (1990)</a>, <a href="https://www.tandfonline.com/doi/abs/10.1080/0032472031000150066?journalCode=rpst20">Gauthier & al(1997)</a>, <a href="https://www.mitpressjournals.org/doi/abs/10.1162/REST_a_00342">Cohen & al (2013)</a>, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1157260">Laroque Salanie (2008)<a>, <a href="https://www.ntanet.org/wp-content/uploads/2018/03/Bastian_kidsandmarriageEITC_fulldraft-1.pdf"> Bastian(2017)</a>) suggesting that children are normal goods. However, these studies are usually made on the whole population or focus on the bottom of the income distribution.
-<!-- https://sites.uclouvain.be/econ/DP/IRES/2016010.pdf -->
+                Some commentators of the public debate claim a causal link between the decrease in child tax break and transfers towards high-income households and the global decline in fertility (<a href= "http://www.lefigaro.fr/vox/economie/2019/01/16/31007-20190116ARTFIG00295-comment-le-matraquage-fiscal-et-social-des-familles-a-fait-chuter-la-natalite-francaise.php?fbclid=IwAR00_d2LGT3yaifPtiKQQ71VwFiFgdczhGHa2TNr6jOlBCfEbI9szfPqQ6g">an example</a> -- in French).
+              </p>
+              <p>
+                
+                While many studies have indeed found a positive link between tax exemption per dependent children and fertility (<a href="https://www.jstor.org/stable/pdf/2006683.pdf?seq=1#page_scan_tab_contents">Whittington & al (1990)</a>, <a href="https://www.tandfonline.com/doi/abs/10.1080/0032472031000150066?journalCode=rpst20">Gauthier & al(1997)</a>, <a href="https://www.mitpressjournals.org/doi/abs/10.1162/REST_a_00342">Cohen & al (2013)</a>, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1157260">Laroque Salanie (2008)<a>, <a href="https://www.ntanet.org/wp-content/uploads/2018/03/Bastian_kidsandmarriageEITC_fulldraft-1.pdf"> Bastian(2017)</a>), these studies are usually made on the whole population or focus on the bottom of the income distribution.
+                
+<!--                 
+                Many other explanations can be made on the decline of France fertility (age of women at first child, economic uncertainty, provision of public goods such as creches or schools, etc). -->
+              </p>
+              <p>
+                Does this change in women fertility rate is due to the child tax break and subsidies directed towards high-income households?
+                To answer that question we can first rely on a relatively big database (the Échantillon Démographique Permanent) to describe from which part of the income distribution changes in fertility.  We can include as a preliminary analysis the classical determinants of fertility such as the age of the mother at birth, the age of parents relation, number of years of studies, number of previous children, and so on, to see if indeed the decrease in French fertility is due to high-income households.</p>
+                <p> If the change in fertility is indeed due to change in high-income households, we can then answer the question if it is due to the reduction in child-related transfers and tax breaks. By relying on three French tax reforms that happened between 2012 and 2015 that reduced widely the tax exemption per dependent children (up to 6% of disposable income for a 3 children family)<sup><a href="#fn2" id="ref2">2</a></sup> only for the last decile of the income distribution. An evaluation of the impact of the reform could be done with a triple-difference estimator as used in the third chapter of my thesis. The Échantillon Démographique Permanent allows running such an analysis in a panel over a relatively large population (over 50 000 households).<br>
+                </p>
+                <hr></hr>
+                <sup id="fn1">1. <a href="https://www.insee.fr/fr/statistiques/3692693#graphique-figure3"> Bilan démographique 2018
+                  La fécondité baisse depuis quatre ans (INSEE Première, 2019)</a>.<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup> <br>
+                <sup id="fn2">2. <a href="./docs/IDEP/idep_analyses_N6.pdf"> Fiscalité des familles aisés : vers une forfaitarisation de l’enfant (RFFP, Bargain & al, 2016)</a>.<a href="#ref2" title="Jump back to footnote 1 in the text.">↩</a></sup>
+
+                <!-- https://sites.uclouvain.be/econ/DP/IRES/2016010.pdf -->
 <!--              <a href= "http://budgetmodel.wharton.upenn.edu/issues/2016/1/7/the-economic-determinants-of-fertility-choices">click</a>-->
-              <p>
-              Top of the income distribution parents make their children inherit of their good social, and intellectual and capital. <!--(Trzaskowski & al (2014))-->
+              <!-- <p>
+              Top of the income distribution parents make their children inherit of their good social, and intellectual and capital. (Trzaskowski & al (2014))-->
               <!-- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3907681/ -->
+              <!--
               They also invest more in their education. This would generally lead to more productive children.
               By subsidizing rich households fertility government may create future economic growth when their high-skilled children will enter the labor market. 
-              </p>
-
-              <p>
+              </p> --> 
 
 
 
                 
-              Although this reasoning can be questioned ethically, the government would in that case face a classical equity/efficiency tradeoff: by giving to rich households, the government entails the equity principle by giving more to those that are not in needs. But by incentivizing rich households to have children it may endogenously increase future growth through better human capital. However, that debate is of interest <b>only on the condition</b> that "Rich Households" react on the fertility margin. Do they?
+              <!-- Although this reasoning can be questioned ethically, the government would in that case face a classical equity/efficiency tradeoff: by giving to rich households, the government entails the equity principle by giving more to those that are not in needs. But by incentivizing rich households to have children it may endogenously increase future growth through better human capital.
+                
+                However, that debate is of interest <b>only on the condition</b> that "Rich Households" react on the fertility margin. Do they?
               </p>
 
               <!-- <p>
               If they do not react, then child tax break increasing with income would have little moral grounds. And if they do react it opens room to 
               </p> -->
-              <p>
-              To answer that question we can rely on three French tax reforms that happened between 2012 and 2015 that reduced widely the tax exemption per dependent children (up to 6% of disposable income for a 3 children family) only for the last decile of the income distribution. 
+            </li>
 
-              An evaluation of the impact of the reform could be done with a triple-difference estimator as used in the third chapter of my thesis. The Échantillon Démographique Permanent allows to run such an analysis in panel over a relatively large population (over 50 000 households).
-               </p>
-               </li>
           </ul> 
 
        <hr style="height:1px;border:none;color:#333;background-color:#333;" />
