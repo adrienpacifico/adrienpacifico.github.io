@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style>
+		  .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+		    text-transform: none;
+		  }
+		</style>
+
+	</head>
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<section>
+						<h3>Thesis Defense</h3>
+						<h4>Three empiral essays in French household taxation</h4>
+						<p>
+							<small><a href="http://adrienpacifico.github.io">Adrien Pacifico</a> <br> 
+							<!-- <a href="http://adrienpacifico.github.io">https://adrienpacifico.github.io</a> -->
+							<!-- <br> adrienpacifico@gmail.com -->
+							</small>  
+						<p>		
+						<pid="date">
+						<small>
+						<script> document.write(new Date().toDateString()); </script>
+						</small>
+						</p>
+					</section>
+						<section data-markdown  style =  "text-align: center;font-size: 75%";
+								data-notes="Theoretical and empirical Investigations
+								Tax optimization in French cohabiting couples
+								And the lowerings of the child tax break ceiling: A natural experiment">
+							# Three Chapters:
+							1. Monthly income tax frequency
+							2. A Direct Measure of Inefficiency within Couples
+							3. Rich households taxable income 
+						</section>
+				</section>
+				<section>
+					<section data-markdown  style =  "text-align: center;font-size: 75%">
+					## Monthly Income Tax Frequency:
+					### Theoretical and Empirical Investigations
+					(Joint work with O. Bargain & A. Trannoy)
+					</section>
+					<section data-markdown  style =  "text-align: left;font-size: 75%">
+					
+					<!-- ### Quel est l'impact de la fréquence de l'impôt sur le bien être des ménages ?   -->
+					### What is the impact of the frequency of the tax on households welfare?
+					</section>
+					<section data-markdown  style =  "text-align: left;font-size: 75%">
+					<!-- I. Analyse théorique  
+					II. Application empirique -->
+					I. Theoretical analysis  
+					II. Empirical application
+					</section>
+					<section data-markdown  style =  "text-align: left;font-size: 75%">
+					###	I. Theoretical analysis  
+					#### Hypothesis : 
+					<!-- ###	I. Analyse théorique
+					#### Hypothèses :  -->
+					<!-- 1. Fonction d'utilité concave en fonction du revenu disponible
+					2. Intertemporellement additive
+					2. Revenu exogène
+					3. Myopique/Pas d'épargne
+					4. Fonction d'impôt convexe -->
+
+					1. A concave utility function in disposable income.
+					2. Inter-temporally additive
+					2. Exogeneous income
+					3. Myopic/No savings
+					4. A convex income tax schedule
+					</section>
+
+					<section data-markdown  style =  "text-align: left;font-size: 75%"  
+					data-notes="Equal payment regime
+										  mothly tax">
+					<!-- ### Formellement comparer deux systèmes d'impositions:    -->
+					### Formally compare two tax systems: 
+
+					<!-- Base annuelle avec paiement mensuel : $$y_t - \frac{G(\sum_1^{12} y_t)}{12} $$ 
+					Base mensuelle avec paiement mensuel : $$y_t - \frac{G(12 \times y_t)}{12} $$   -->
+					Anual basis with monthly payments: $$y_t - \frac{G(\sum_1^{12} y_t)}{12} $$ 
+					Monthy basis with monthly payments : $$y_t - \frac{G(12 \times y_t)}{12} $$  
+					
+					> Income smoothing vs. Increase in tax liability
+
+					</section>
+					<!-- <section>
+				<div align="left">
+					Base annuelle compensée avec paiement mensuel : $$ y_t - \frac{1}{12+\lambda} \; G(12y_t)  $$ 
+
+					Income Averaging (Vickrey 1939) :
+          $$ {g_{t}^{V}}= \frac{t}{T} G\left(T\frac{\sum_{p=0}^{t}y_{p}}{t}\right) -\sum_{p=0}^{t-1}g_{p}^{V}$$
+
+					Base annuelle compensée avec paiement mensuel : $$ y_t - \frac{1}{12+\lambda} \; G(12y_t)  $$ 
+
+					Income Averaging (Vickrey 1939) :
+          $$ {g_{t}^{V}}= \frac{t}{T} G\left(T\frac{\sum_{p=0}^{t}y_{p}}{t}\right) -\sum_{p=0}^{t-1}g_{p}^{V}$$
+					</div>
+					</section> -->
+
+				<section>
+				<div align="left">
+					Annual basis compensated with monthly payments: $$ y_t - \frac{1}{12+\lambda} \; G(12y_t)  $$ 
+
+					Income Averaging (Vickrey 1939):
+          $$ {g_{t}^{V}}= \frac{t}{T} G\left(T\frac{\sum_{p=0}^{t}y_{p}}{t}\right) -\sum_{p=0}^{t-1}g_{p}^{V}$$  
+					<br>
+
+					<b>Theoretical result:</b> The equal payement system is pareto improving compared to the anual basis scheme with the equal payment scheme.
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+
+					<!-- Base annuelle compensée avec paiement mensuel : $$ y_t - \frac{1}{12+\lambda} \; G(12y_t)  $$ 
+
+					Income Averaging (Vickrey 1939) :
+          $$ {g_{t}^{V}}= \frac{t}{T} G\left(T\frac{\sum_{p=0}^{t}y_{p}}{t}\right) -\sum_{p=0}^{t-1}g_{p}^{V}$$ -->
+					</div>
+					</section>
+
+
+					<section data-markdown  style =  "text-align: left;font-size: 75%">
+					###	II. Empirical application
+					 
+					1. French Labor Survey with income imputed (roughly) on a monthly basis.
+					2. Compare the impact of the different tax systems on aggregated income tax.
+					3. Compare the different tax systems on households' welfare by comparing their utility level.
+						<!-- 2. By comparing different money metric levels. -->
+					</section>
+					<!-- <section data-markdown  style =  "text-align: left;font-size: 75%">
+					###	II. Application empirique
+					#### Hypothèses : 
+					1. Enquête emploi avec mensualisation grossière des revenus.
+					2. Compare l'impact des différents systèmes sur les recettes publiques.
+					3. Compare l'impact sur le bien être des ménages :  
+						1. En comparant les différents niveaux d'utilités
+						2. En convertissant ces niveaux en équivalent monétaire (money metrics)
+					</section> -->
+
+
+					<section data-markdown  style =  "text-align: center;font-size: 75%">
+					### Simulations
+
+					</section>
+					<section data-markdown  style =  "text-align: left;font-size: 75%">
+					Annual System : 48 B EUR 
+				  Monthly System: 54 B EUR  
+					$\implies$ 6 billion euros in aggregated tax liability with the monthly scheme.
+					</section>
+					<section data-markdown  style =  "text-align: left;font-size: 75%">
+					### Welfare analysis: aggreated results
+					--------------
+					| Tax scheme | Annual    | Monthly     | Compensated   | Vickrey |
+					|------------|----------|----------|--------|--------|
+					| Amount (B EUR)   | 48			  | 54       | 48   	| 48	   |
+					| Utility    | -4206.78			  | -4195       | -4194   	| -4178	   |
+					| Money Metric (B EUR)| 1171.6			  | 1173.71       |1174.26   	| 1177.24	   |
+					----------------------------------------
+ 
+					</section>
+					<section data-markdown  style =  "text-align: left;font-size: 75%"; data-notes="Vickrey loosers: earn less at the beginning of the year than at the end" >
+					### Welfare analysis: Winner/Losers
+					--------------
+					| Tax scheme | Monthly     | Compensated   | Vickrey |
+					|------------|----------|--------|--------|
+					| Winners   | 7.4%    |  9,2%  	| 13,4%	   |
+					| Neutral  	| 82,6%   |  88,8%  	| 	80,6%   |
+					| Losers |  10%       |2%   	| 6%	   |
+					----------------------------------------
+ 
+					</section>
+					<!-- <section data-markdown  style =  "text-align: left;font-size: 75%">
+					Les ménages à bas revenus sont les plus concernés :
+					1. Variations de revenus
+					2. Largeur des tranches
+					3. Concavité de l'utilité  
+					(Pour les bas revenus, de gros gains d'utiliés implique de petits gains en money metric)
+					4. Comportements d'épargne
+					</section> -->
+
+
+
+					
+
+				</section>
+				<section>
+					<!-- <section data-markdown  style =  "text-align: center;font-size: 75%">
+					## 2. A Direct Measure of Inefficiency within Couples
+					</section> -->
+					<!-- <section data-markdown  style =  "text-align: center;font-size: 75%">
+					How does cohabiting couples allocate their children between their two tax-units?
+					Comment les couples de cohabitants allouent leurs enfants entre leurs deux foyers fiscaux ?
+					</section> -->
+					<section data-markdown  style =  "text-align: center;font-size: 75%">
+					## 2. A Direct Measure of Inefficiency within Couples
+
+					(Joint work with O. Bargain, D. Echevin & N. Moreau)
+					</section>
+					<section data-markdown  style =  "text-align: center;font-size: 75%">
+					How does cohabiting couples allocate their children between their two tax-units?
+					</section>
+										
+					<section data-markdown  style =  "text-align: center;font-size: 75%">
+					### Context:
+					- Cohabitants with children constitute two fiscal-unit
+					- Children can be allocated between the two tax returns
+					- There exists an optimal allocation in order to minimize the tax
+					</section>
+					<section>
+							<aside class="notes">
+									Exemple: père 17 968, mère 41 222
+									Why would cohabitants do not choose the best allocation ?
+
+							</aside>
+						<iframe class="stretch"   src="./images/cohabitants-heatmap.html"></iframe>
+					</section>
+					
+					<!-- <section data-markdown  style =  "text-align: left;font-size: 75%">
+					## Analys
+					Données: EDP
+					1. Parmi 2 millions de foyers fiscaux en 2013, sélectionn 193 000 couples de cohabitants, dont 52 000 ont tous les enfants qui sont "biologiques" en 2013.
+					2. Calcul de l'impôt des deux foyers fiscaux de chaque ménage en fonction de l'allocation des enfants.
+					</section> -->
+					<section data-markdown  style =  "text-align: left;font-size: 75%">
+					## Analysis
+					Data: *Échantillong Démographique Permanent* (EDP)
+					1. From 2 million fiscal households in 2013, I select 193 000 cohabiting couples, from which 52 000 has all their children identified as biological children in the civil registry.
+					2. Compute the income tax for each of the two fiscal unit in each household based on children allocation.					</section>
+					<section data-markdown  style =  "text-align: center;font-size: 85%">
+					25% of the households do not optimize their disposable income by not choosing the optimal allocation.  
+
+
+					
+					8% for households that do not optimize their disposable income up to 1% of their pre-tax income.
+
+
+					</section>
+					<!-- <section data-markdown  style =  "text-align: left;font-size: 75%">
+					## Explications:
+					</section>
+					<section data-markdown  style =  "text-align: left;font-size: 75%">
+					Dynamique:  
+					Optimisation en 2013 et en 2014 $\implies$
+					Nous observons que l'inertie est un déterminant très fort de l'optimisation.
+					</section> -->
+
+
+					<section data-markdown  style =  "text-align: center;font-size: 75%">
+					# Explanations:  
+					I. The Dynamic  
+					II. Cooperation
+					</section>
+					<section data-markdown  style =  "text-align: left;font-size: 75%">
+					## The Dynamic:  
+					We observe that inertia is a very strong determinant of optimization.  
+					Indeed households rarely change their allocation weather they should or not change their optimal allocation.
+					</section>
+
+
+
+					<!-- <section data-markdown  style =  "text-align: left;font-size: 75%">
+					Coopération:  
+					Multinomial Logit:  
+					Les couples qui n'optimisent pas pour de larges valeurs du revenu imposable ont plus tendance à se séparer une fois que nous avont controlé pour un ensemble de covariables.
+
+					À l'inverse, les couples qui optimisent ont une plus grande chance de se marier ou de se pacser.
+					</section> -->
+					<section data-markdown  style =  "text-align: left;font-size: 75%">
+					## Cooperation:  
+					Multinomial Logit:  
+					Couples that do not optimize for large values of their taxable income, are more likely to separate the year after, once controlled for a large set of covariates.  
+
+					Conversely, couples that do optimize are more likely to mary or enter in a civil union.
+					</section>
+
+					<section data-markdown  style =  "text-align: left;font-size: 75%">
+					![](./images/MNL_cooperation.png)
+
+					</section>
+					<section data-markdown  style =  "text-align: left;font-size: 75%">
+					This suggest that non-cooperation is one of the derterminants of the non respect of efficiency inside households.
+					<!-- Ceci suggère que la non-coopération est un des déterminants du non respect de l'efficacité au sein du ménage. -->
+					</section>
+					
+					<section data-markdown  style =  "text-align: center;font-size: 75%">
+					# Next chapter.
+					</section>
+
+
+					</section>
+				</section>
+				<section>
+					<section data-markdown  style =  "text-align: Center;font-size: 75%">
+					## 3. Rich households taxable income
+					</section>
+					<!-- <section data-markdown  style =  "text-align: Center;font-size: 75%">
+					S'intéresse à comment les ménages Français ont réagi à l'abaissement du plafond du quotient familial vis à vis de leurs base taxable.
+					</section>						 -->
+					<section data-markdown  style =  "text-align: Center;font-size: 75%">
+					Question how rich French household reacted to the lowering of the maximum child tax break with respect to their taxable income?  
+					</section>		
+					<!-- <section>
+						<h2>Contexte : </h2>
+        <ol>
+          <li>Le gain fiscal par enfant augmente avec le revenu.
+          </li>
+          <li>
+            Cependant ce gain est limité par un plafond.
+          </li>
+          <li>
+          Ce plafond a été abaissé de 2336 à 1500 euros en 2011 et2014. Ce montant est doublé à partir du troisième enfant et plus.
+          </li>
+        </ol>
+					</section> -->
+					<section>
+						<h2>Context: </h2>
+        <ol>
+          <li>The French tax system works such that the child tax break is increasing with income.  
+          </li>
+          <li>
+            However, the fiscal gain a household can derive from a child is bounded by a ceiling.  
+          </li>
+          <li>
+					The ceiling per child has been lowered from 2336€ to 1500€ between 2011 and 2014. That per child ceiling is twice the baseline amount for the third child and over.
+          </li>
+        </ol>
+					</section>
+
+				<section>
+						<h3> Households have been affected in three ways: </h3>
+			<font size="6">
+        <ol>
+          <li>Households for which the fiscal advantage per child was lower than 1500 euros are unaffected.  
+          </li>
+          <li>
+            Households for which the fiscal advantage per child was between 1500 euros and 2336 euros face a change in their marginal tax rate.  
+          </li>
+          <li>
+					Households for which the fiscal advantage per child was over 2336 euros face a lump sum loss in disposable income of 836€ per child.
+          </li>
+        </ol>
+			</font>
+					</section>
+					<!-- <section data-markdown  style =  "text-align: left;font-size: 75%">
+				On peut distinguer trois groupes de ménages:  	
+				1. Les ménages pour qui le gain fiscal était inférieur à 1500 euros, et ne sont donc pas traités par la réforme.  
+				2. Les ménages pour qui le gain fiscal était entre 1500 et 2336 euros. Ils font face à un changement de taux marginal.
+				3. Les ménages pour qui le gain fiscal était supérieur à 2336 euros, et qui voient donc une réduction forfaitaire de leur révenu de 836 euros par demie-part. 
+				</section> -->
+					<section data-markdown  style =  "text-align: left;font-size: 75%">
+									Implication:  
+				As the fiscal advantage increases with income, there exists an income threshold at which a household will attain the ceiling. 
+				<!-- L'avantage fiscal augmantant avec le revenu, il existe un seuil de revenu auquel les ménages vont atteindre le plafond du quotient familial:   -->
+
+|# of children						|2011|	2013|
+|------------|----------|----------|--------|--------|
+|1	|63,083	|58,380
+|2	|73,539	|63,396
+|3	|94,343 |73,844
+|4	|115,142	|84,095
+|5	|135,922	|94,508
+|6	|150,684	|104,691
+					
+					</section>
+				
+				<section>
+					<iframe class="stretch" src="./images/bokeh_graph.html">
+				  </iframe>
+				</section>
+
+		<section style = "text-align: left; font-size:71%;">
+			<h3>A triple difference estimation :</h3>
+			      <p>$$\begin{align*}
+\Delta y_i &= \beta_0 + \sum_{i=1}^{6} {\beta_i \text{Children}_i} + \sum_{j=1}^{6} {{}_{b}\delta_i \text{Between}_i}  + \sum_{i=1}^{6} {{}_{o}\delta_i \text{Over}_j} \\
+    &+ \sum_{i=1}^6 {{}_{b}\gamma_{i} \text{Children}_i \times \text{Between}_i} \\
+    &+ \sum_{i=1}^6 {{}_{o}\gamma_{i} \text{Children}_i \times \text{Over}_i} \\
+    & + \epsilon_i
+\end{align*}$$ </p>
+		</section>
+		<section>
+		<img class="stretch" data-src="./images/Triple_diff_result_simple.png">
+		</section>
+		<section>
+		<h3>Income dynamic</h3>
+		<img class="stretch" data-src="./images/income_dynamics.png">
+		</section>
+		<section  data-markdown  style =  "text-align: left;font-size: 75%">
+		The common trend assumption is not respected.  
+		Once comensated for  the initial before the reform trend, the results are not holding anymore.
+		</section>
+			</section>
+
+	<section>
+		<section data-markdown  style =  "text-align: center;font-size: 75%">
+		# Conclusion
+		</section>
+		<section data-markdown  style =  "text-align: left;font-size: 75%">
+		 The first chapter looks at a subject that has not been much studied. It gives hindsight about the impact of the frequency of the tax, and provides a methodology to assess quantitatively the impact that a change in the frequency of the tax. 
+		</section>
+		<section data-markdown  style =  "text-align: left;font-size: 75%">
+		 The second chapter shows that households does not always respect efficiency.
+		</section>
+		<section data-markdown  style =  "text-align: left;font-size: 75%">
+		The third chapters tries to assess the behavioral reactions associated with a tax reform. It does so by relying on a "new" methodology that was supposed to solve many existing caveats in the litterature. This methology also tries to disentengle the income effect and the substitution effect.  
+
+		However, the common trend assumptions is not respected, and once corrected for the trend before the reform, the results tend to show a null effect of the reform.
+		</section>
+		<section data-markdown  style =  "text-align: left;font-size: 75%">
+		## Reproducibility, and the the scientific method 
+		- All the code to produce the thesis is available on [https://github.com/adrienpacifico/Thesis_Taxation_2019](https://github.com/adrienpacifico/Thesis_Taxation_2019)
+		</section>
+
+		</section>
+	</section>
+
+	<section>
+		<section data-markdown  style =  "text-align: center;font-size: 75%">
+		# A. Chapter I
+		</section>
+		<section>
+		<img class="stretch" data-src="./images/Annexes_chapter_1/money_metric_gain_by_decile.png">
+		</section>
+		<section>
+		<img class="stretch" data-src="./images/Annexes_chapter_1/monetary_utility_winner_by_type_of_transition.png">
+		</section>
+		<section>
+			Share facing a variation greater than 20%
+		<img class="stretch" data-src="./images/Annexes_chapter_1/share_of_variation_20.png">
+		</section>
+							<section data-markdown  style =  "text-align: left;font-size: 75%">
+					Low income households are the most concerned:
+					1. Variation in income.
+					2. Small marginal tax brackets (when including benefits).  
+					3. Concave utility $\implies$ steep at the bottom.  
+					(For low income households, big utility gains implies small money metric gains).
+					4. Behaviors related to savings.
+					</section>
+	</section>
+	<section>
+		<section data-markdown  style =  "text-align: center;font-size: 75%">
+		# A. Chapter II
+		</section>
+	</section>
+		<section>
+		<section data-markdown  style =  "text-align: center;font-size: 75%">
+		# A. Chapter III
+		</section>
+	</section>
+
+
+
+</section>
+
+
+
+
+
+ </section>
+
+
+
+</section>
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			Reveal.configure({ slideNumber: 'c/t' });
+
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				math: {
+		mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					},
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true },
+
+				]
+			});
+
+
+		</script>
+
+	</body>
+</html>
+
+
+
+					<section>
+						<h2>Vertical Slides</h2>
+						<p>Slides can be nested inside of each other.</p>
+						<p>Use the <em>Space</em> key to navigate through all slides.</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level 1</h2>
+						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+					</section>
+					<section>
+						<h2>Basement Level 2</h2>
+						<p>That's it, time to go back up.</p>
+						<br>
+						<a href="#/2">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<h2>Slides</h2>
+					<p>
+						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Point of View</h2>
+					<p>
+						Press <strong>ESC</strong> to enter the slide overview.
+					</p>
+					<p>
+						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+					</p>
+				</section>
+
+				<section>
+					<h2>Touch Optimized</h2>
+					<p>
+						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+					</p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
+
+						Write content using inline or external Markdown.
+						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+
+						```
+						<section data-markdown>
+						  ## Markdown support
+
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+						</section>
+						```
+					</script>
+				</section>
+				<section data-markdown>
+					## Hello comment ça va vielle branche 
+
+				</section>
+				<section>
+					<section id="fragments">
+						<h2>Fragments</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+
+						<aside class="notes">
+							List all the properties from the theoretical section.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's different types of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p>
+							<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
+							<span style="display: inline-block;" class="fragment fade-up">up, </span>
+							<span style="display: inline-block;" class="fragment fade-down">down, </span>
+							<span style="display: inline-block;" class="fragment fade-left">left</span>
+						</p>
+						<p class="fragment fade-in-then-out">fade-in-then-out</p>
+						<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
+						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
+					</section>
+				</section>
+
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						reveal.js comes with a few themes built in: <br>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
+
+				<section>
+					<section data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+						<h2>Tiled Backgrounds</h2>
+						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2>... and GIFs!</h2>
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						You can override background transitions per-slide.
+					</p>
+					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+				</section>
+
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+
+				<section>
+					<h2>Marvelous List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The nice thing about standards is that there are so many to choose from</q> and block:
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Speaker View</h2>
+					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+					<p>Press the <em>S</em> key to try it out.</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
+					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section>
+
+				<section>
+					<h2>Global State</h2>
+					<p>
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the page background.
+					</p>
+				</section>
+
+				<section data-state="customevent">
+					<h2>State Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+					</p>
+				</section>
+
+				<section>
+					<h2>Much more</h2>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="https://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
+
