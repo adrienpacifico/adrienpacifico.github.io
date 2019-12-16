@@ -2,7 +2,8 @@ ipykernel==4.9.0
 ipython==6.5.0
 jupyter
 matplotlib
-openfisca-france
+openfisca-core==25.2.2 
+openfisca-france==32.3.0
 pandas
 bokeh
 plotly
