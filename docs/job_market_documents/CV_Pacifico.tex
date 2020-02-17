@@ -18,7 +18,7 @@
 %\usepackage[latin1]{inputenc}   % accents dans le source
 %\usepackage[T1]{fontenc}        % accents dans le DVI
 \usepackage{url}                % citer des adresses électroniques et des URL
-
+\usepackage{ragged2e}
 % La page
 %#########
 \pagestyle{empty}               % On ne numérote pas les pages
@@ -113,22 +113,38 @@
 
   \end{tabular}
 \end{minipage}
-\vspace{0.3cm}
+\vspace{-0.3cm}
 
 
 \titre{Research interest}
 %###################
 
-\begin{tabular}{c@{}p{0.8\textwidth}}
 
-&Taxation, Fiscal Microsimulation, Equality of Opportunity, Reproducibility in Economics.
+\begin{center}
+{\justify
+Taxation, Microsimulation, Equality of Opportunity, Fertility,
+ Reproducibility in Economics, Data Science in Economics, Judicial Decisions and Economics.}
 %\textbf{Primary} & Fiscal Microsimulation, Households Taxation, Taxation\\
 % \textbf{Secondary} & Equality of Opportunity, Fertility Determinants, Couples Formation and Dissolution, Gender Discrimination\\
 %  \textbf{Tertiary} & Reproducibility in Economics\\
 %  
+\end{center}
+
+
+\titre{Current Positions}
+%###################
+
+\begin{tabular}{c@{:  }p{0.8\textwidth}}
+\textbf{2018-2020} & Temporary Lecturer and Research Assistant (ATER) at Cergy-Pontoise University (THEMA) \\
+
+ \textbf{2019-2020} & Associate faculty at Aix-Marseille School of Economics \\
+  \textbf{2019-} & Post-doc RA at HEC Paris (working for \url{www.cascad.tech}) (hourly contract to certify that a piece of research is reproducible).\\
+ \textbf{2020-} & Part-time consultant at ETH Zurich for Elliott Ash (work on an intergenerational mobility project).  \\
+  
 \end{tabular}
 
-\titre{Positions}
+
+\titre{Past Positions}
 %###################
 
 \begin{tabular}{c@{:  }p{0.8\textwidth}}
@@ -151,23 +167,19 @@
 
 
 \espace
-\textbf{2014--2019 } & Aix-Marseille School of Economics PhD program \\
+\textbf{2014--2019 } & Aix-Marseille School of Economics PhD program. \\
 
-
-\espace
 \textbf{2012--2014} & Aix-Marseille School of Economics graduate program.  \\
 
-\espace
 \textbf{Fall 2012} & Visiting student, Bishop's University (Canada). \\
 
-\espace
 \textbf{2011--2014} & Magistère ingénieur économiste  (Faculté d'économie gestion, Marseille, France). \\
 
-\espace
 \textbf{2009--2012} & Bachelor in economics (Faculté d'économie gestion, Marseille, France). \\
 
 
 \end{tabular}
+\newpage
 \titre{Teaching experience}
 %###################
 \begin{itemize}
@@ -176,7 +188,7 @@
 \item \textbf{2014-2016} : Teaching assistant in Microsimulation, M2 students (24 hours, assisting Mahdi Ben Jelloul).
 
 \end{itemize}
-\newpage
+
 \titre{Publication}
 %###################
 
@@ -208,7 +220,7 @@
 \titre{Research Replicability Certification}
 %###################
 \begin{itemize}
-\item \myhref[black-gray]{{https://www.cascad.tech/certification/62-a-direct-measure-of-inefficiency-within-couples-tax-optimization-in-french-cohabiting-couples/}}{A Direct Measure of Inefficiency within Couples,} as been certified RRR (Perfect Replication) by the cascad certification agency (\myhref[black-gray]{www.cascad.tech}{https://www.cascad.tech}).
+\item \textbf{May 2019} :  \myhref[black-gray]{{https://www.cascad.tech/certification/62-a-direct-measure-of-inefficiency-within-couples-tax-optimization-in-french-cohabiting-couples/}}{A Direct Measure of Inefficiency within Couples,} has been certified RRR (Perfect Replication) by the cascad certification agency (\myhref[black-gray]{www.cascad.tech}{https://www.cascad.tech}).
 \end{itemize}
 
 
@@ -223,15 +235,105 @@
 
 \begin{tabular}{c@{ :  }p{0.8\textwidth}}
 \espace
-\textbf{2018-06-25} & \textbf{Rich households taxable income and the lowering of the family quotient ceiling: A French natural experiment}
-17th Journées LAGV - international conference in public economics, Aix-en-Provence, France \\
-\textbf{2017-07-13} & \textbf{ The Impact of Tax Frequency: Theoretical and Empirical Investigations} (in collaboration with Olivier Bargain \& Alain Trannoy) 
+\textbf{2018-06-25} & \textbf{"Rich Households' Taxable Income: A French Natural Experiment to Disentangle Income and Substitution Effects"}
+\emph{17th Journées LAGV - international conference in public economics, Aix-en-Provence, France} \\
+\textbf{2017-07-13} & \textbf{Tax Frequency: Theoretical and Empirical Investigations} (in collaboration with Olivier Bargain \& Alain Trannoy) 
 18th annual Meeting of the Association for Public Economic Theory, Paris, France \\
 \textbf{2016-03-15} & \textbf{ Tax frequency : Theoretical and empirical analysis} (in collaboration with Olivier Bargain \& Alain Trannoy)  École thématique CNRS Évaluation des politiques publiques, organisée par \emph{"La Fédération Travail, Emploi, Politiques Publiques"} (FR CNRS n° 3435) \\
 \textbf{2015-12-17} & \textbf{ Du sacrifice égal au transfert forfaitaire par enfant : un bilan des réformes du traitement fiscal de la famille} (in collaboration with Olivier Bargain \& Alain Trannoy)  Évaluations des politiques publiques, organized by \emph{"Direction générale du Trésor"}, and the french economic association (AFSE) \\
 \end{tabular}
 
 
+
+
+
+
+
+
+
+\titre{Work in progress}
+%###################
+\begin{itemize}
+
+
+
+\item {\emph{Inefficient Couples: Non-minimization of the Tax Burden  among French Cohabiting Couples (with O. Bargain, D. Echevin \& N.Moreau)}} (started in 2017, revise and resubmit \emph{National Tax Journal}).\\ The present paper investigates the tax returns of French cohabiting couples with children, defined
+here as neither married nor in a civil union. These couples represent an interesting case, because
+they form two separate tax units according to French tax laws and must optimally assign their
+children to one of the parents’ tax units to optimize tax rebates. Using administrative tax data and a
+microsimulation model, we analyze whether cohabiting couples allocate their children to minimize
+the joint tax burden of the family. We find, however, that children are not optimally allocated in 25\%
+of cases. We interpret the reasons why couples fail to financially optimize their situation by
+discussing the usual explanations (e.g., transaction costs, “simple rule,” inertia) as well as a more
+specific reason: the potential non-cooperative behavior of cohabiting couples, possibly related to the
+lack of a binding agreement or potential asymmetries of information between partners. We also find
+suggestive evidence regarding heuristics (such as the equal split rule for an even number of children),
+a large degree of inertia (based on fiscal status changes over two years), and possible non-
+cooperation (suboptimal couples tend to separate more and marry less in the subsequent period).
+
+
+
+
+\item {\emph{Intergenerational mobility in France (with E. Ash \& M.Guillot)}} (started in 2019).\\ 
+
+
+\item  {\emph{Rich Households' Taxable Income: A French Natural Experiment to Disentangle Income and Substitution Effects.}} (started in 2018) \\ 
+  This paper evaluates the taxable income behavioral reactions of French high-income households to a tax change. I focus on a 2013 tax reform creating a unique framework that allows controlling for position in the income distribution. With this framework I temperate the \emph{mean reversion bias} and the  \emph{change in the distribution bias} usually associated with  the assessment of elasticities with panel data. I can do so because the reform treats differently households based on income but also family composition. The   analysis is conducted with a recently released big administrative panel dataset. I run a \emph{triple-difference} regression on the  change in taxable income depending on the group an high-income household belongs to: the untreated (no effect), the ones facing only a change in their disposable  income (pure income effect), and those facing a change in marginal tax rate and disposable income (income and substitution effect). Quite surprisingly and contrasting with the rest of the literature, I find that the income effect strongly dominates the substitution effect, that women react less than men, and that a significant part of the effect is driven mainly by workers nearing retirement by reacting on the extensive margin.
+
+\item{\emph{Monthly Income Tax Frequency: Theoretical and Empirical Investigations (with O. Bargain \& A. Trannoy)}} (stated in 2014). \\
+The pioneering work of Vickrey  (1939, 1947) on the income-tax frequency has not inspired a lot of further studies. We propose an investigation of this issue both from a theoretical and empirical viewpoint within an annual framework. We first show that increasing the income-tax frequency (from an annual tax basis to a monthly tax basis) is Pareto-improving for any convex tax scheme. This result is obtained for the same tax revenue. Welfare gains are all the larger as the infra-annual volatility of income is large and the propensity to save is low, implying that the benefits should be larger for the bottom of the income distribution. We submit an empirical illustration using French administrative data and simulations of the current tax-benefit system. Despite that this system is not convex over the whole income domain, we show that increasing the tax frequency can lead to substantial social welfare gains. 
+
+%\item  {\emph{An evaluation of child related tax-benefits on fertility, work, civil union and divorce. }} \\ 
+%French high income households benefit from two main instruments with respect to children : a tax break that embodies an equal sacrifice spirit called \emph{quotient familial}, and a family benefit called \emph{allocation familiale} depending only on the number of children. Two reforms in 2012 and 2015 have decreased the net tax break and transfers towards households which monthly income is over 6 000 euros. These reductions  impact disposable income significantly : it goes up to 6\% for a married couple with 3 children earning 8 500 euros. Based on panel data containing individualised administrative tax returns we use these two natural experiments to evaluate their individual and joint impact on working hours, fertility, civil union and divorce. 
+
+  
+
+
+\end{itemize}
+
+\newpage
+
+\titre{References}
+%###################
+\begin{itemize}
+
+
+
+
+
+
+\item{Pr. Alain Trannoy: EHESS, alain.trannoy@univ-amu.fr} 
+\item{Pr. Etienne Lehmann: CRED/Université Panthéon Assas, alain.trannoy@univ-amu.fr} 
+\item{Pr. Olivier Bargain: Université de Bordeaux, } 
+\end{itemize}
+
+
+
+\titre{Internships}
+%###################
+
+\begin{itemize}
+
+\item \textbf{April--August 2014}:   \textbf{Microsimulation}\\
+Commissariat général à la stratégie et à la prospective (joint with Etalab), \emph{Paris}, supervised by Mahdi Ben Jelloul.\\
+Developed and worked on Openfisca, an Opensource microsimulation software.\\
+\url{http://www.openfisca.fr/}
+
+\item \textbf{May--July 2013}: \textbf{Research}\\
+GREQAM, Marseille, (France)\\
+ Worked on decision under total uncertainty and on national public spendings (under the direction of Nicolas Gravel)
+ 
+ \item \textbf{July 2012}: \textbf{Management Control}\\
+Bacardi, Geneva, (Switzerland)\\
+Created a database of FTE workers in Bacardi's plants. 
+
+ \item \textbf{June 2012}: \textbf{Research}\\
+GREQAM, Marseille, (France)\\
+ Translated experiments from English to French (under the direction of Nobuyuki Hanaki)
+
+
+ 
+\end{itemize}
 \titre{Hackathons}
 %#############
 
@@ -252,7 +354,6 @@
 
 \end{tabular}
 \newpage
-
 
 
 \titre{Computer Skills \& Languages}
@@ -313,60 +414,6 @@ Jupyter Specific
 \end{itemize}
 \newpage
 
-
-
-
-\titre{Work in progress}
-%###################
-\begin{itemize}
-
-
-
-
-
-
-\item{\emph{Tax frequency (with O. Bargain \& A. Trannoy)}}. \\
-The pioneering work of Vickrey  (1939, 1947) on the income-tax frequency has not inspired a lot of further studies. We propose an investigation of this issue both from a theoretical and empirical viewpoint within an annual framework. We first show that increasing the income-tax frequency (from an annual tax basis to a monthly tax basis) is Pareto-improving for any convex tax scheme. This result is obtained for the same tax revenue. Welfare gains are all the larger as the infra-annual volatility of income is large and the propensity to save is low, implying that the benefits should be larger for the bottom of the income distribution. We submit an empirical illustration using French administrative data and simulations of the current tax-benefit system. Despite that this system is not convex over the whole income domain, we show that increasing the tax frequency can lead to substantial social welfare gains. 
-
-%\item  {\emph{An evaluation of child related tax-benefits on fertility, work, civil union and divorce. }} \\ 
-%French high income households benefit from two main instruments with respect to children : a tax break that embodies an equal sacrifice spirit called \emph{quotient familial}, and a family benefit called \emph{allocation familiale} depending only on the number of children. Two reforms in 2012 and 2015 have decreased the net tax break and transfers towards households which monthly income is over 6 000 euros. These reductions  impact disposable income significantly : it goes up to 6\% for a married couple with 3 children earning 8 500 euros. Based on panel data containing individualised administrative tax returns we use these two natural experiments to evaluate their individual and joint impact on working hours, fertility, civil union and divorce. 
-\item  {\emph{Rich households taxable income and lowerings of the child tax break ceiling: A French natural experiment.}} \\ 
- This paper evaluates the taxable income behavioral reactions of French high-income households to a tax change. I focus on a 2013 tax reform creating a unique framework that allows to control for  position in the income distribution. With this framework I temperate the \emph{mean reversion bias} and the  \emph{change in the distribution bias} usually associated with  the assessment of elasticities with panel data. I can do so because the reform treats differently households based on income but also family composition. The   analysis is conducted with a recently released big administrative panel dataset. I run a \emph{triple-dfference} regression on the  change in taxable income depending on the group an high-income household belongs to: the untreated (no effect), the ones facing only a change in their disposable  income (pure income effect), and those facing a change in marginal tax rate and disposable income (income and substitution effect). Quite surprisingly and contrasting with the rest of the literature, I find 
- that the income effect strongly dominates the substitution effect, that women react less than men, and that a significant part of the effect is driven mainly by workers nearing retirement by reacting on the extensive margin.
-
-\item {\emph{Tax optimization within household: a test of the collective model (with O. Bargain, D. Echevin \& N.Moreau)}}.\\ French tax-households benefit of tax rebate from the presence of children in the fiscal-household. French cohabiting couples are registered as two tax units, and each child can be allocated in each tax unit. Due to some complex rules of the french income tax, there exists an optimal allocation of children between tax-households to minimize the household income tax. We test with recently available administrative data whether couples maximize their disposable income through optimal allocation of children within fiscal-household.
-\end{itemize}
-
-
-
-
-\newpage
-
-\titre{Internships}
-%###################
-
-\begin{itemize}
-
-\item \textbf{April--August 2014}:   \textbf{Microsimulation}\\
-Commissariat général à la stratégie et à la prospective (joint with Etalab), \emph{Paris}, supervised by Mahdi Ben Jelloul.\\
-Developed and worked on Openfisca, an Opensource microsimulation software.\\
-\url{http://www.openfisca.fr/}
-
-\item \textbf{May--July 2013}: \textbf{Research}\\
-GREQAM, Marseille, (France)\\
- Worked on decision under total uncertainty and on national public spendings (under the direction of Nicolas Gravel)
- 
- \item \textbf{July 2012}: \textbf{Management Control}\\
-Bacardi, Geneva, (Switzerland)\\
-Created a database of FTE workers in Bacardi's plants. 
-
- \item \textbf{June 2012}: \textbf{Research}\\
-GREQAM, Marseille, (France)\\
- Translated experiments from English to French (under the direction of Nobuyuki Hanaki)
-
-
- 
-\end{itemize}
 
 
 %\titre{Academic Life}
